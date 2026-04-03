@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 99f4b14ca5764ee4eb7ae6f688a80f4d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5938993889582193326
+    second: darkdungeon_tileset_decorations_0
+  - first:
+      213: -8707887495575796796
+    second: darkdungeon_tileset_decorations_1
+  - first:
+      213: -2160327433180575544
+    second: darkdungeon_tileset_decorations_2
+  - first:
+      213: -5186237783542430523
+    second: darkdungeon_tileset_decorations_3
+  - first:
+      213: 5104943136678765335
+    second: darkdungeon_tileset_decorations_4
+  - first:
+      213: -7532624389071617534
+    second: darkdungeon_tileset_decorations_5
+  - first:
+      213: -1364588798845404824
+    second: darkdungeon_tileset_decorations_6
+  - first:
+      213: 7594285719662431684
+    second: darkdungeon_tileset_decorations_7
+  - first:
+      213: -6855289241131869497
+    second: darkdungeon_tileset_decorations_8
+  - first:
+      213: 5459658845687552127
+    second: darkdungeon_tileset_decorations_9
+  - first:
+      213: 7367015961010873214
+    second: darkdungeon_tileset_decorations_10
+  - first:
+      213: -4076202692660461089
+    second: darkdungeon_tileset_decorations_11
+  - first:
+      213: 2960080616293799047
+    second: darkdungeon_tileset_decorations_12
+  - first:
+      213: -7176778372526382468
+    second: darkdungeon_tileset_decorations_13
+  - first:
+      213: 6288225095156707249
+    second: darkdungeon_tileset_decorations_14
+  - first:
+      213: 1811022484242643165
+    second: darkdungeon_tileset_decorations_15
+  - first:
+      213: -1868480978637091874
+    second: darkdungeon_tileset_decorations_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaa13c7f97b8b6250800000000000000
+      internalID: 5938993889582193326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 159
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3832a857e572780800000000000000
+      internalID: -8707887495575796796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 159
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c88dba35a9f402e0800000000000000
+      internalID: -2160327433180575544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 143
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c48e37b638c608b0800000000000000
+      internalID: -5186237783542430523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 129
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7136e445cb668d640800000000000000
+      internalID: 5104943136678765335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_5
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 127
+        width: 50
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20241f6170eb67790800000000000000
+      internalID: -7532624389071617534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_6
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 79
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869b754a7b1001de0800000000000000
+      internalID: -1364588798845404824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 79
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd0d4330a2546960800000000000000
+      internalID: 7594285719662431684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_8
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 0
+        width: 98
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca17cd81ce1dd0a0800000000000000
+      internalID: -6855289241131869497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_9
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 47
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f78960c2bca94cb40800000000000000
+      internalID: 5459658845687552127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 47
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73afa20cf5ec3660800000000000000
+      internalID: 7367015961010873214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_11
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 47
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd18b776f3b6e67c0800000000000000
+      internalID: -4076202692660461089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_12
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 47
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78416b823a1541920800000000000000
+      internalID: 2960080616293799047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_13
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 15
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72ebd92816f66c90800000000000000
+      internalID: -7176778372526382468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_14
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 15
+        width: 50
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf23885863444750800000000000000
+      internalID: 6288225095156707249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 15
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8378daa5b022910800000000000000
+      internalID: 1811022484242643165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkdungeon_tileset_decorations_16
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 15
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb03c61372d116e0800000000000000
+      internalID: -1868480978637091874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      darkdungeon_tileset_decorations_0: 5938993889582193326
+      darkdungeon_tileset_decorations_1: -8707887495575796796
+      darkdungeon_tileset_decorations_10: 7367015961010873214
+      darkdungeon_tileset_decorations_11: -4076202692660461089
+      darkdungeon_tileset_decorations_12: 2960080616293799047
+      darkdungeon_tileset_decorations_13: -7176778372526382468
+      darkdungeon_tileset_decorations_14: 6288225095156707249
+      darkdungeon_tileset_decorations_15: 1811022484242643165
+      darkdungeon_tileset_decorations_16: -1868480978637091874
+      darkdungeon_tileset_decorations_2: -2160327433180575544
+      darkdungeon_tileset_decorations_3: -5186237783542430523
+      darkdungeon_tileset_decorations_4: 5104943136678765335
+      darkdungeon_tileset_decorations_5: -7532624389071617534
+      darkdungeon_tileset_decorations_6: -1364588798845404824
+      darkdungeon_tileset_decorations_7: 7594285719662431684
+      darkdungeon_tileset_decorations_8: -6855289241131869497
+      darkdungeon_tileset_decorations_9: 5459658845687552127
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
