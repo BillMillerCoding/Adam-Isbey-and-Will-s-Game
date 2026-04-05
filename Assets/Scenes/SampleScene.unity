@@ -352,6 +352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: flatten_character
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: fa9b7985517cee8418e8ca302731b1ef, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: fa9b7985517cee8418e8ca302731b1ef, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -362,11 +366,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: fa9b7985517cee8418e8ca302731b1ef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.088
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: fa9b7985517cee8418e8ca302731b1ef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.052
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: fa9b7985517cee8418e8ca302731b1ef, type: 3}
       propertyPath: m_LocalPosition.z
