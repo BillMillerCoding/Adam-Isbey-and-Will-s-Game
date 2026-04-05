@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: floorspike2
+  m_EditorClassIdentifier: Unity.2D.Tilemap.Extras::UnityEngine.Tilemaps.AnimatedTile
+  m_AnimatedSprites:
+  - {fileID: -301371319, guid: be8c867a38af66d4f85b84adb27cbe34, type: 3}
+  - {fileID: -301371319, guid: be8c867a38af66d4f85b84adb27cbe34, type: 3}
+  - {fileID: -301371319, guid: be8c867a38af66d4f85b84adb27cbe34, type: 3}
+  - {fileID: -301371319, guid: be8c867a38af66d4f85b84adb27cbe34, type: 3}
+  - {fileID: 898976498, guid: be8c867a38af66d4f85b84adb27cbe34, type: 3}
+  - {fileID: 270627340, guid: be8c867a38af66d4f85b84adb27cbe34, type: 3}
+  - {fileID: 270627340, guid: be8c867a38af66d4f85b84adb27cbe34, type: 3}
+  - {fileID: 270627340, guid: be8c867a38af66d4f85b84adb27cbe34, type: 3}
+  - {fileID: -837308855, guid: be8c867a38af66d4f85b84adb27cbe34, type: 3}
+  - {fileID: -1665623805, guid: be8c867a38af66d4f85b84adb27cbe34, type: 3}
+  m_MinSpeed: 7
+  m_MaxSpeed: 7
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
