@@ -7,30 +7,24 @@ using UnityEngine.Events;
 /// </summary>
 public class BossHealth : MonoBehaviour
 {
-    // ─── Health ───────────────────────────────────────────────────────────────
     [Header("Health")]
     [SerializeField] private float maxHealth = 300f;
     [SerializeField] private float currentHealth;
 
-    // ─── Phase thresholds (percentage of max HP) ─────────────────────────────
     [Header("Phase Thresholds (% of max HP)")]
     [Tooltip("Above this % → Phase 1")]
     [SerializeField, Range(0f, 1f)] private float phase2Threshold = 0.66f;
     [Tooltip("Above this % → Phase 2, below → Phase 3")]
     [SerializeField, Range(0f, 1f)] private float phase3Threshold = 0.33f;
 
-    // ─── Events ──────────────────────────────────────────────────────────────
     [Header("Events")]
     [Tooltip("Fired when the phase changes. Passes the new phase number (1-3).")]
     public UnityEvent<int> OnPhaseChanged;
     [Tooltip("Fired when HP reaches 0.")]
     public UnityEvent OnDeath;
 
-    // ─── Runtime state (visible in Inspector for debugging) ──────────────────
     [Header("Debug (read-only)")]
     [SerializeField] private int currentPhase = 1;
-
-    // ─── Public API ──────────────────────────────────────────────────────────
     public float MaxHealth => maxHealth;
     public float CurrentHealth => currentHealth;
     public int CurrentPhase => currentPhase;
@@ -44,7 +38,7 @@ public class BossHealth : MonoBehaviour
     }
 
     /// <summary>
-    /// Call this from your damage system (e.g., Collider2D hit detection).
+    /// Used to apply damage to the boss.
     /// </summary>
     public void TakeDamage(float amount)
     {

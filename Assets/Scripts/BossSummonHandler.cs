@@ -8,12 +8,10 @@ using UnityEngine;
 /// </summary>
 public class BossSummonHandler : MonoBehaviour
 {
-    // ─── Configuration ───────────────────────────────────────────────────────
     [Header("Summon Pool")]
     [Tooltip("Drag BossSummonData assets here.")]
     [SerializeField] private List<BossSummonData> summons = new List<BossSummonData>();
 
-    // ─── References ──────────────────────────────────────────────────────────
     private Transform playerTarget;
 
     [Header("Debug (read-only)")]
@@ -25,7 +23,6 @@ public class BossSummonHandler : MonoBehaviour
         playerTarget = player;
     }
 
-    // ─── Public API ──────────────────────────────────────────────────────────
 
     /// <summary>
     /// Picks a valid summon, spawns the prefab, and waits for the cast duration.
@@ -68,8 +65,6 @@ public class BossSummonHandler : MonoBehaviour
 
         result?.Invoke(true);
     }
-
-    // ─── Selection Logic ─────────────────────────────────────────────────────
 
     private BossSummonData SelectSummon()
     {

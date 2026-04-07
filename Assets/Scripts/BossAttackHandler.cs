@@ -10,15 +10,12 @@ using UnityEngine;
 /// </summary>
 public class BossAttackHandler : MonoBehaviour
 {
-    // ─── Configuration ───────────────────────────────────────────────────────
     [Header("Attack Pool")]
     [Tooltip("Drag BossAttackData assets here. Order does not matter — selection is weighted.")]
     [SerializeField] private List<BossAttackData> attacks = new List<BossAttackData>();
 
-    // ─── References ──────────────────────────────────────────────────────────
     private Animator animator;
 
-    // ─── Runtime ─────────────────────────────────────────────────────────────
     private bool attackAnimationFinished;
 
     [Header("Debug (read-only)")]
@@ -28,8 +25,6 @@ public class BossAttackHandler : MonoBehaviour
     {
         animator = GetComponentInChildren<Animator>();
     }
-
-    // ─── Public API ──────────────────────────────────────────────────────────
 
     /// <summary>
     /// Picks a valid attack for the given ring, executes it, and yields until it finishes.
@@ -51,13 +46,11 @@ public class BossAttackHandler : MonoBehaviour
 
         Debug.Log($"[BossAttackHandler] Executing attack: {chosen.attackName}");
 
-        // Fire the animator trigger
         if (animator != null && !string.IsNullOrEmpty(chosen.animationTrigger))
         {
             animator.SetTrigger(chosen.animationTrigger);
         }
 
-        // Wait for the Animation Event callback, or fallback duration
         float elapsed = 0f;
         while (!attackAnimationFinished && elapsed < chosen.fallbackDuration)
         {
@@ -81,11 +74,8 @@ public class BossAttackHandler : MonoBehaviour
         attackAnimationFinished = true;
     }
 
-    // ─── Selection Logic ─────────────────────────────────────────────────────
-
     private BossAttackData SelectAttack(int currentRing)
     {
-        // Build a list of valid candidates
         List<BossAttackData> candidates = new List<BossAttackData>();
         float totalWeight = 0f;
 
@@ -93,10 +83,9 @@ public class BossAttackHandler : MonoBehaviour
         {
             if (!atk.IsOffCooldown) continue;
 
-            // Boost weight if the attack's preferred ring matches the current ring
             float w = atk.weight;
             if (atk.preferredRing == currentRing)
-                w *= 2f; // preferred-ring bonus
+                w *= 2f;
 
             candidates.Add(atk);
             totalWeight += w;
@@ -104,7 +93,6 @@ public class BossAttackHandler : MonoBehaviour
 
         if (candidates.Count == 0) return null;
 
-        // Weighted random selection
         float roll = Random.Range(0f, totalWeight);
         float running = 0f;
         foreach (var atk in candidates)
@@ -116,6 +104,6 @@ public class BossAttackHandler : MonoBehaviour
                 return atk;
         }
 
-        return candidates[candidates.Count - 1]; // fallback
+        return candidates[candidates.Count - 1];
     }
 }

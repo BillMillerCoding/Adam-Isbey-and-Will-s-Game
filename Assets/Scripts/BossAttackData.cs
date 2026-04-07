@@ -33,9 +33,6 @@ public class BossAttackData : ScriptableObject
              "This is a fallback — ideally an Animation Event calls BossAttackHandler.OnAttackAnimationEnd().")]
     public float fallbackDuration = 1f;
 
-    // --- Runtime state (not saved to the asset) ---
     [System.NonSerialized] public float lastUsedTime = -999f;
-
-    /// <summary>Returns true if enough time has passed since the last use.</summary>
     public bool IsOffCooldown => Time.time - lastUsedTime >= cooldown;
 }

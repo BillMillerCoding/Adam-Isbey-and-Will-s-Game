@@ -97,7 +97,6 @@ public class BossController : MonoBehaviour
     // ─────────────────────────────────────────────────────────────────────────
     private IEnumerator DecisionLoop()
     {
-        // Small initial delay so all systems can initialise
         yield return new WaitForSeconds(0.2f);
 
         while (!health.IsDead)

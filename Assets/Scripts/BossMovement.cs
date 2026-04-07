@@ -7,7 +7,6 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class BossMovement : MonoBehaviour
 {
-    // ─── Configuration ───────────────────────────────────────────────────────
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 4f;
     [Tooltip("How close the boss gets before stopping its approach")]
@@ -17,11 +16,9 @@ public class BossMovement : MonoBehaviour
     [Tooltip("Offset from the player's position when teleporting")]
     [SerializeField] private Vector2 teleportOffset = new Vector2(2f, 0f);
 
-    // ─── References ──────────────────────────────────────────────────────────
     private Rigidbody2D rb;
     private Transform playerTarget;
 
-    // ─── Runtime state ───────────────────────────────────────────────────────
     [Header("Debug (read-only)")]
     [SerializeField] private bool isMoving = false;
 
@@ -60,8 +57,6 @@ public class BossMovement : MonoBehaviour
             Debug.Log("[BossMovement] Reached stopping distance.");
         }
     }
-
-    // ─── Public API ──────────────────────────────────────────────────────────
 
     /// <summary>Begin moving toward the player.</summary>
     public void StartApproach()
