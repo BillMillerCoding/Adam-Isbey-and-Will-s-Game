@@ -34,7 +34,6 @@ public class BossSummonData : ScriptableObject
     [Tooltip("Seconds the boss pauses during this summon (e.g., for a visual cue)")]
     public float castDuration = 0.5f;
 
-    // --- Runtime state ---
     [System.NonSerialized] public float lastUsedTime = -999f;
 
     /// <summary>Returns true if enough time has passed since the last use.</summary>

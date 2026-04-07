@@ -6,7 +6,6 @@ using UnityEngine;
 /// </summary>
 public class BossPhaseManager : MonoBehaviour
 {
-    // ─── Per-phase action counts (configurable in Inspector) ─────────────────
     [Header("Phase 1 — Actions per cycle")]
     [Tooltip("Attacks allowed in a single Phase 1 cycle")]
     [SerializeField] private int phase1Attacks = 1;
@@ -49,7 +48,6 @@ public struct PhaseActionPlan
 {
     public int attacks;
     public int summons;
-    /// <summary>If true, boss picks attacks OR summons this cycle — not both.</summary>
     public bool exclusiveChoice;
 
     public PhaseActionPlan(int attacks, int summons, bool exclusiveChoice)
