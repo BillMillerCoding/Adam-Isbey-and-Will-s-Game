@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: FollowRings
   m_EditorClassIdentifier: Assembly-CSharp::BossSummonData
   summonName: New Summon
-  prefab: {fileID: 0}
+  prefab: {fileID: 2568958107525082956, guid: 2a4d39d08c8e3b5429b6f572213906ef, type: 3}
   spawnOffset: {x: 0, y: 0}
-  spawnAtPlayer: 0
+  spawnAtPlayer: 1
   cooldown: 5
   weight: 1
   castDuration: 0.5

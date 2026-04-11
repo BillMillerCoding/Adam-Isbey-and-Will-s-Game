@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1251303229624616699}
   - component: {fileID: 3680154788777778135}
   - component: {fileID: 2080186440363112071}
+  - component: {fileID: 8182601042821253074}
+  - component: {fileID: 7864157601965055030}
   m_Layer: 0
   m_Name: Ring Summon Sprite
   m_TagString: Untagged
@@ -28,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4877574075295187319}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0483, y: -1.2414, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.5063, y: 3.9864, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -127,6 +129,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566144c154b5790459a4762d9633ad2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RingSelfDestruct
+--- !u!114 &8182601042821253074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877574075295187319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53ae17ba699ec5445a400182ef73f1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+--- !u!58 &7864157601965055030
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877574075295187319}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.31}
+  m_Radius: 0.25
 --- !u!1 &6045928249651509517
 GameObject:
   m_ObjectHideFlags: 0
