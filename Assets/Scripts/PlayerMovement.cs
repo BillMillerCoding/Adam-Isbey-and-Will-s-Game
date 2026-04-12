@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float dodgeDuration = 0.3f;//length of time dodge action in effect
     public int maxEndurance = 3;//endurance will be spent to perform a dodgeroll.
     public float enduranceRechargeTime = 2f;//amount of time needed to recover one unit of endurance
+    private CapsuleCollider2D playerCollider;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -24,9 +25,13 @@ public class PlayerMovement : MonoBehaviour
     public GameObject projectilePrefab;
     public Transform swordTip;
 
+    public SwordHitBox swordHitbox;// this is to grab a reference to the player SwordHitbox child object to
+                                   // manage its collider via an animation event.
+                                    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerCollider = GetComponent<CapsuleCollider2D>();
         rb = GetComponent<Rigidbody2D>();//rigid body controls velocity in 2d space.
         animator = GetComponent<Animator>();//manages which animations play
         lastMoveDirection = Vector2.down; //sets default direction of player character to south (0,-1)
@@ -70,8 +75,20 @@ public class PlayerMovement : MonoBehaviour
             dodgeTimer = dodgeDuration;
             currentEndurance--;
             animator.SetBool("isDodging", true);
+            playerCollider.enabled = false;//disable collider to give player invincibility frames.
         }
     }
+
+    public void EnableHitbox()//called by animation event to activate SwordHitBox collider.
+    {
+        swordHitbox.EnableHitbox();
+    }
+
+    public void DisableHitbox()//called by an animation event to deactivate SwordHitBox collider.
+    {
+        swordHitbox.DisableHitbox();
+    }
+
 
 
 
@@ -92,6 +109,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 isDodging = false;
                 animator.SetBool("isDodging", false);
+                playerCollider.enabled = true;
             }
         }
 

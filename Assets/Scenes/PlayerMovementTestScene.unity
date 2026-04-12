@@ -375,6 +375,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4720112977096268743, guid: a480c4ed3791a6b4b8f9b28757e6d8a4, type: 3}
+      propertyPath: maxHealth
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 4979702919136063085, guid: a480c4ed3791a6b4b8f9b28757e6d8a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.67837
@@ -417,6 +421,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5899721450657419273, guid: a480c4ed3791a6b4b8f9b28757e6d8a4, type: 3}
       propertyPath: m_Name
+      value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899721450657419273, guid: a480c4ed3791a6b4b8f9b28757e6d8a4, type: 3}
+      propertyPath: m_TagString
       value: Boss
       objectReference: {fileID: 0}
     m_RemovedComponents: []
