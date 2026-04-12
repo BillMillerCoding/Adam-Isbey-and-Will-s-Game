@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IIDamageable
 {
     public float moveSpeed = 5f;
     public float dodgeSpeed = 12f;
@@ -17,10 +17,11 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 dodgeDirection;
     private Vector2 aimDirection;
 
-    private int currentEndurance;
+    public int currentEndurance;
     private bool isDodging = false;
     private float dodgeTimer = 0f;
     private float rechargeTimer = 0f;
+    public HealthBar staminaBar;
 
     public GameObject projectilePrefab;
     public Transform swordTip;
@@ -74,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
             dodgeDirection = lastMoveDirection;
             dodgeTimer = dodgeDuration;
             currentEndurance--;
+            TakeDamage(1);
             animator.SetBool("isDodging", true);
             playerCollider.enabled = false;//disable collider to give player invincibility frames.
         }
@@ -138,8 +140,19 @@ public class PlayerMovement : MonoBehaviour
             if(rechargeTimer >= enduranceRechargeTime)
             {
                 currentEndurance++;
+                TakeDamage(1);
                 rechargeTimer = 0f;
             }
         }
+    }
+
+    public void TakeDamage(float amount)
+    {
+        staminaBar.SetHealth( currentEndurance );
+    }
+
+    public float MaximumHealth
+    {
+        get { return (float)maxEndurance; }
     }
 }
