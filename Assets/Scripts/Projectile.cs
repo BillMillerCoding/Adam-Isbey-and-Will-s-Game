@@ -3,6 +3,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float speed = 10f;
+    private float damage = 1f;
     private Vector2 direction;
 
     public void Launch(Vector2 launchDirection)
@@ -13,8 +14,10 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Boss"))
         {
+            BossHealth bossHealth = other.GetComponent<BossHealth>();
+            bossHealth.TakeDamage(damage);
             // deal damage later
             Destroy(gameObject);
         }
