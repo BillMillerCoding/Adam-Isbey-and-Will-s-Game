@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour, IIDamageable
+public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float dodgeSpeed = 12f;
@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour, IIDamageable
     private bool isDodging = false;
     private float dodgeTimer = 0f;
     private float rechargeTimer = 0f;
-    public HealthBar staminaBar;
+    public StaminaBar staminaBar;
 
     public GameObject projectilePrefab;
     public Transform swordTip;
@@ -77,7 +77,9 @@ public class PlayerMovement : MonoBehaviour, IIDamageable
             currentEndurance--;
             TakeDamage(1);
             animator.SetBool("isDodging", true);
-            playerCollider.enabled = false;//disable collider to give player invincibility frames.
+            // To start I-frames
+            gameObject.layer = LayerMask.NameToLayer("IgnoreDamage");
+            //playerCollider.enabled = false;//disable collider to give player invincibility frames.
         }
     }
 
@@ -111,7 +113,9 @@ public class PlayerMovement : MonoBehaviour, IIDamageable
             {
                 isDodging = false;
                 animator.SetBool("isDodging", false);
-                playerCollider.enabled = true;
+                // To end I-frames
+                gameObject.layer = LayerMask.NameToLayer("Player");
+                //playerCollider.enabled = true;
             }
         }
 
