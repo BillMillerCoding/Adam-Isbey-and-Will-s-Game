@@ -2127,7 +2127,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff2790657fe21954c917e72e4d3d40c9, type: 3}
   m_Name: 
@@ -2247,7 +2247,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 893796916}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2354,11 +2354,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767852568}
   m_CullTransparentMesh: 1
---- !u!224 &893796916 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 33305870512357431, guid: 439e34d550e511f4d9452eff30544496, type: 3}
-  m_PrefabInstance: {fileID: 1430521774}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &989158470
 GameObject:
   m_ObjectHideFlags: 0
@@ -2389,7 +2384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   VictoryText: {fileID: 767852568}
-  GameOver: {fileID: 1514829564}
+  GameOver: {fileID: 0}
 --- !u!4 &989158472
 Transform:
   m_ObjectHideFlags: 0
@@ -2436,7 +2431,7 @@ PrefabInstance:
     - target: {fileID: 5286206607145738523, guid: e78d7e1a50f057f4380cbf9bacc3dc4d, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 570704847}
+      objectReference: {fileID: 0}
     - target: {fileID: 5286206607145738523, guid: e78d7e1a50f057f4380cbf9bacc3dc4d, type: 3}
       propertyPath: maxHealth
       value: 100
@@ -2476,7 +2471,7 @@ PrefabInstance:
     - target: {fileID: 6275031714488832428, guid: e78d7e1a50f057f4380cbf9bacc3dc4d, type: 3}
       propertyPath: staminaBar
       value: 
-      objectReference: {fileID: 2024462609}
+      objectReference: {fileID: 0}
     - target: {fileID: 7924769379733234925, guid: e78d7e1a50f057f4380cbf9bacc3dc4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -23926,3 +23921,4 @@ SceneRoots:
   - {fileID: 1090054760}
   - {fileID: 454814988}
   - {fileID: 705804046693539285}
+  - {fileID: 767852569}
