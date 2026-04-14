@@ -18,6 +18,7 @@ public class BossMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Transform playerTarget;
+    private SpriteRenderer spriteRenderer;
 
     [Header("Debug (read-only)")]
     [SerializeField] private bool isMoving = false;
@@ -27,6 +28,7 @@ public class BossMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     /// <summary>Must be called once by BossController to supply the player reference.</summary>
@@ -37,16 +39,13 @@ public class BossMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (playerTarget != null)
-        {
-            FacePlayer();
-        }
-
         if (!isMoving || playerTarget == null)
         {
             rb.linearVelocity = Vector2.zero;
             return;
         }
+
+        FacePlayer();
 
         Vector2 direction = ((Vector2)playerTarget.position - rb.position).normalized;
         float distance = Vector2.Distance(rb.position, playerTarget.position);
@@ -63,11 +62,11 @@ public class BossMovement : MonoBehaviour
         }
     }
 
-    /// <summary>Rotate the boss to face the player. Y rotation 180 if player is left, 0 if right.</summary>
+    /// <summary>Flip the sprite to face the player using SpriteRenderer.flipX instead of rotation.</summary>
     private void FacePlayer()
     {
-        float yRotation = playerTarget.position.x < transform.position.x ? 180f : 0f;
-        transform.rotation = Quaternion.Euler(0f, yRotation, 0f);
+        if (spriteRenderer == null) return;
+        spriteRenderer.flipX = playerTarget.position.x < transform.position.x;
     }
 
     /// <summary>Begin moving toward the player.</summary>

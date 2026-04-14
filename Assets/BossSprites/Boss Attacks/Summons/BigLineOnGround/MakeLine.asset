@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c9c248564546ec4e8b4f96db13ca93c, type: 3}
-  m_Name: SpawnRing
+  m_Name: MakeLine
   m_EditorClassIdentifier: Assembly-CSharp::BossSummonData
-  summonName: New Summon
-  prefab: {fileID: 6319131631615417218, guid: c636143cfe7cd964991e906de9b410c2, type: 3}
+  summonName: MakeLine
+  prefab: {fileID: 0}
   spawnOffset: {x: 0, y: 0}
   spawnAtPlayer: 1
   cooldown: 5
