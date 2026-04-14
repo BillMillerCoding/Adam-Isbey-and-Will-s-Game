@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossAttackData
   attackName: Lazer Blast
   animationTrigger: StartLazerBlast
-  preferredRing: 0
+  preferredRing: 1
   cooldown: 5
   weight: 1
-  fallbackDuration: 5
+  fallbackDuration: 1
