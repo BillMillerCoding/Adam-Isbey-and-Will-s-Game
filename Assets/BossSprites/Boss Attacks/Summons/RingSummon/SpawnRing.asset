@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SpawnRing
   m_EditorClassIdentifier: Assembly-CSharp::BossSummonData
   summonName: New Summon
-  prefab: {fileID: 6045928249651509517, guid: 42e00ee5d2fca3e41a4fb5a857ed2ef2, type: 3}
+  prefab: {fileID: 6319131631615417218, guid: c636143cfe7cd964991e906de9b410c2, type: 3}
   spawnOffset: {x: 0, y: 0}
   spawnAtPlayer: 1
   cooldown: 5

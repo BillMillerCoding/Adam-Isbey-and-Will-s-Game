@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3f99189cdac78f4ab65b2a0596a5cc9, type: 3}
   m_Name: Lazer Blast
   m_EditorClassIdentifier: Assembly-CSharp::BossAttackData
-  attackName: New Attack
-  animationTrigger: 
+  attackName: Lazer Blast
+  animationTrigger: StartLazerBlast
   preferredRing: 0
-  cooldown: 3
+  cooldown: 5
   weight: 1
-  fallbackDuration: 1
+  fallbackDuration: 5
