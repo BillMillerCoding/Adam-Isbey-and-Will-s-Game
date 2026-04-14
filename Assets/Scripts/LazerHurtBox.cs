@@ -1,17 +1,8 @@
 using UnityEngine;
 
-public class RingSpawnHurtBox : MonoBehaviour
+public class LazerHurtBox : MonoBehaviour
 {
     public float damage = 10f;
-
-    private void SpawnHurtBox()
-    {
-        Collider2D collider = GetComponent<Collider2D>();
-        if (collider != null)
-        {
-            collider.enabled = true;
-        }
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
