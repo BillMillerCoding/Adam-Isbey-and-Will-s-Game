@@ -101,6 +101,8 @@ public class BossController : MonoBehaviour
 
         while (!health.IsDead)
         {
+            // Boss is stationary while deciding.
+            movement.StopMovement();
             SetState(BossState.Deciding);
 
             // 1. Current phase
@@ -158,18 +160,22 @@ public class BossController : MonoBehaviour
                     attacksToPerform = 0;
             }
 
-            // 7. Execute actions in sequence — movement stops during attacks
-            movement.StopMovement();
-
+            // 7. Boss stays still for attacks
             for (int i = 0; i < attacksToPerform; i++)
             {
                 yield return StartCoroutine(DoAttack(ring));
             }
 
+            // Boss can move while summoning
+            if (summonsToPerform > 0)
+                movement.StartApproach();
+
             for (int i = 0; i < summonsToPerform; i++)
             {
                 yield return StartCoroutine(DoSummon());
             }
+
+            movement.StopMovement();
 
             // 8. Wait, then repeat
             SetState(BossState.Idle);
@@ -184,7 +190,15 @@ public class BossController : MonoBehaviour
     {
         SetState(BossState.Approaching);
         movement.StartApproach();
-        yield return new WaitForSeconds(approachDuration);
+
+        // Wait until either the duration expires or the boss stops on its own (reached player).
+        float elapsed = 0f;
+        while (elapsed < approachDuration && movement.IsMoving)
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
         movement.StopMovement();
     }
 
