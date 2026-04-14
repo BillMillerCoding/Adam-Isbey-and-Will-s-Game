@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBar : MonoBehaviour
+public class StaminaBar : MonoBehaviour
 {
     public Slider healthBar;
-    public IIDamageable playerHealth;
+    public PlayerMovement playerHealth;
     public GameObject whosHealthBar;
 
     private void Start()
     {
-        playerHealth = whosHealthBar.GetComponent<IIDamageable>();
+        playerHealth = whosHealthBar.GetComponent<PlayerMovement>();
         healthBar = GetComponent<Slider>();
         healthBar.maxValue = playerHealth.MaximumHealth;
         healthBar.value = playerHealth.MaximumHealth;

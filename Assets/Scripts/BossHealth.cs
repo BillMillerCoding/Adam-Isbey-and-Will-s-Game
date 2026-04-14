@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.Events;
-
+using UnityEngine.InputSystem;
 /// <summary>
 /// Tracks boss HP and exposes the current phase (1, 2, or 3).
 /// Fires UnityEvents when the boss changes phase or dies.
 /// </summary>
-public class BossHealth : MonoBehaviour
+public class BossHealth : MonoBehaviour, IIDamageable
 {
     [Header("Health")]
     [SerializeField] private float maxHealth = 300f;
@@ -30,13 +30,16 @@ public class BossHealth : MonoBehaviour
     public int CurrentPhase => currentPhase;
     public bool IsDead => currentHealth <= 0f;
     public float HealthPercent => maxHealth > 0f ? currentHealth / maxHealth : 0f;
+    
+    //this is for testing
+    public HealthBar healthBar;
 
     private void Awake()
     {
         currentHealth = maxHealth;
         currentPhase = 1;
+        // these two lines are for testing
     }
-
     /// <summary>
     /// Used to apply damage to the boss.
     /// </summary>
@@ -48,12 +51,17 @@ public class BossHealth : MonoBehaviour
         Debug.Log($"[BossHealth] Took {amount} damage. HP: {currentHealth}/{maxHealth}");
 
         EvaluatePhase();
-
+        healthBar.SetHealth( currentHealth );
         if (IsDead)
         {
             Debug.Log("[BossHealth] Boss has died.");
             OnDeath?.Invoke();
         }
+    }
+
+    public float MaximumHealth
+    {
+        get => MaxHealth;
     }
 
     /// <summary>
@@ -78,4 +86,5 @@ public class BossHealth : MonoBehaviour
             OnPhaseChanged?.Invoke(currentPhase);
         }
     }
+    
 }

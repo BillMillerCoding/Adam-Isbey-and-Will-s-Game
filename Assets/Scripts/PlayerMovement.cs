@@ -17,10 +17,11 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 dodgeDirection;
     private Vector2 aimDirection;
 
-    private int currentEndurance;
+    public int currentEndurance;
     private bool isDodging = false;
     private float dodgeTimer = 0f;
     private float rechargeTimer = 0f;
+    public StaminaBar staminaBar;
 
     public GameObject projectilePrefab;
     public Transform swordTip;
@@ -74,8 +75,11 @@ public class PlayerMovement : MonoBehaviour
             dodgeDirection = lastMoveDirection;
             dodgeTimer = dodgeDuration;
             currentEndurance--;
+            TakeDamage(1);
             animator.SetBool("isDodging", true);
-            playerCollider.enabled = false;//disable collider to give player invincibility frames.
+            // To start I-frames
+            gameObject.layer = LayerMask.NameToLayer("IgnoreDamage");
+            //playerCollider.enabled = false;//disable collider to give player invincibility frames.
         }
     }
 
@@ -109,7 +113,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 isDodging = false;
                 animator.SetBool("isDodging", false);
-                playerCollider.enabled = true;
+                // To end I-frames
+                gameObject.layer = LayerMask.NameToLayer("Player");
+                //playerCollider.enabled = true;
             }
         }
 
@@ -138,8 +144,19 @@ public class PlayerMovement : MonoBehaviour
             if(rechargeTimer >= enduranceRechargeTime)
             {
                 currentEndurance++;
+                TakeDamage(1);
                 rechargeTimer = 0f;
             }
         }
+    }
+
+    public void TakeDamage(float amount)
+    {
+        staminaBar.SetHealth( currentEndurance );
+    }
+
+    public float MaximumHealth
+    {
+        get { return (float)maxEndurance; }
     }
 }

@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class RingSpawnHurtBox : MonoBehaviour
 {
-    public float damage = 10f;
-
+    public float damage = 10;
     private void SpawnHurtBox()
     {
         Collider2D collider = GetComponent<Collider2D>();
@@ -11,17 +10,16 @@ public class RingSpawnHurtBox : MonoBehaviour
         {
             collider.enabled = true;
         }
+        
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        // Get the script on the other object
+        if (collision.gameObject.tag == "Player")
         {
-            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(damage);
-            }
+            PlayerHealth player = collision.gameObject.GetComponent<PlayerHealth>();
+            player.TakeDamage(damage);
         }
     }
+
 }
