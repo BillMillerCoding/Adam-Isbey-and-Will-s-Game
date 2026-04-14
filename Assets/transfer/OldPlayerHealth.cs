@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerHealth : MonoBehaviour, IIDamageable
+public class OldPlayerHealth : MonoBehaviour, IIDamageable
 {
     public float maxHealth = 100;
     public float currentHealth;

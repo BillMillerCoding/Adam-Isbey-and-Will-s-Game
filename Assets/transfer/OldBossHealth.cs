@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 /// Tracks boss HP and exposes the current phase (1, 2, or 3).
 /// Fires UnityEvents when the boss changes phase or dies.
 /// </summary>
-public class BossHealth : MonoBehaviour, IIDamageable
+public class OldBossHealth : MonoBehaviour, IIDamageable
 {
     [Header("Health")]
     [SerializeField] private float maxHealth = 300f;
@@ -61,10 +61,8 @@ public class BossHealth : MonoBehaviour, IIDamageable
 
     public float MaximumHealth
     {
-        get { 
-            return maxHealth;
-        }
-}
+        get => MaxHealth;
+    }
 
     /// <summary>
     /// Recalculates the phase from current HP and fires the event if it changed.

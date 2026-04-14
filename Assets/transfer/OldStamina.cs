@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 
-public class Health : MonoBehaviour
+public class OldStamina : MonoBehaviour
 {
     public int curHealth = 0;
     public int maxHealth = 100;

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 
-public class Health : MonoBehaviour
+public class OldHealth : MonoBehaviour
 {
     public int curHealth = 0;
     public int maxHealth = 100;
@@ -36,3 +36,7 @@ public class Health : MonoBehaviour
         healthBar.SetHealth( curHealth );
     }
 }
+
+
+
+
