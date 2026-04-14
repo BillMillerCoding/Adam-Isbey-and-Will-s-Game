@@ -19,6 +19,7 @@ public class RingSpawnHurtBox : MonoBehaviour
         {
             PlayerHealth player = collision.gameObject.GetComponent<PlayerHealth>();
             player.TakeDamage(damage);
+            Debug.Log("Player hit by ring spawn! Damage: " + damage);
         }
     }
 
