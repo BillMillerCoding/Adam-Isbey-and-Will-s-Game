@@ -12,6 +12,7 @@ public class LazerHurtBox : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(damage);
+                Debug.Log("Player hit by lazer! Damage: " + damage);
             }
         }
     }

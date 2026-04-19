@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class BossProjectile : MonoBehaviour
@@ -40,7 +41,9 @@ public class BossProjectile : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(damage);
+                Console.WriteLine("Player hit by boss projectile! Damage: " + damage);
             }
+            Console.WriteLine("Boss projectile hit the player.");
             Destroy(gameObject);
         }
     }
