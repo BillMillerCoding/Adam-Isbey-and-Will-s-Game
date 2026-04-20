@@ -1,21 +1,28 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerHealth : MonoBehaviour, IIDamageable
+public class PlayerHealth : MonoBehaviour, IIDamageable, IResettable
 {
     public float maxHealth = 100;
     public float currentHealth;
     public HealthBar healthBar;
     public UnityEvent OnDeath;
+    public GameObject oneUpPrefab;   // assign in Inspector
+    public Canvas canvas;            // assign your Screen Space canvas
+    private float savedHealth;
+    private float savedMaxHealth;
     void Start()
     {
         currentHealth = maxHealth;
+        ResetManager.Register(this);
     }
 
     public void TakeDamage(float damage)
     {
         if ((currentHealth > 0))
         {
+            //SpawnPopup("Damage", Color.red);
+
             currentHealth -= damage;
         }
         healthBar.SetHealth( currentHealth );
@@ -34,6 +41,29 @@ public class PlayerHealth : MonoBehaviour, IIDamageable
         OnDeath.Invoke();
         
     }
+    
 
-   
+    public void SpawnPopup(string message, Color color)
+    {
+        Vector3 worldPos = transform.position + new Vector3(0, 0, 0);
+
+        GameObject popupObj = Instantiate(oneUpPrefab, canvas.transform);
+
+        PopupFollow popup = popupObj.GetComponent<PopupFollow>();
+        popup.cam = Camera.main;
+        popup.Initialize(worldPos, message, color);
+    }
+
+
+    public void SaveSnapshot()
+    {
+        savedHealth = currentHealth;
+        savedMaxHealth = maxHealth;
+    }
+
+    public void RestoreSnapshot()
+    {
+        currentHealth = savedHealth;
+        maxHealth = savedMaxHealth;
+    }
 }

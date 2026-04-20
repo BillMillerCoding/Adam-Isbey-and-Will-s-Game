@@ -26,10 +26,24 @@ public class BossHealth : MonoBehaviour, IIDamageable
     [Header("Debug (read-only)")]
     [SerializeField] private int currentPhase = 1;
     public float MaxHealth => maxHealth;
-    public float CurrentHealth => currentHealth;
-    public int CurrentPhase => currentPhase;
+    
+   private float savedHealth;
+    private int savedPhase;
+    public float CurrentHealth
+    {
+        get => currentHealth;
+        set => currentHealth = value;
+    }
+
+    public int CurrentPhase
+    {
+        get => currentPhase;
+        set => currentPhase = value;
+    }
+
     public bool IsDead => currentHealth <= 0f;
     public float HealthPercent => maxHealth > 0f ? currentHealth / maxHealth : 0f;
+    public GameManager gameManager;
     
     //this is for testing
     public HealthBar healthBar;
@@ -52,11 +66,19 @@ public class BossHealth : MonoBehaviour, IIDamageable
 
         EvaluatePhase();
         healthBar.SetHealth( currentHealth );
+        //gameManager.BossHurt();
         if (IsDead)
         {
             Debug.Log("[BossHealth] Boss has died.");
             OnDeath?.Invoke();
         }
+    }
+
+    public void AddHealth(float amount)
+    {
+        if (IsDead) return;
+        currentHealth = Mathf.Max(0f, currentHealth + amount);
+        EvaluatePhase();
     }
 
     public float MaximumHealth
@@ -83,10 +105,27 @@ public class BossHealth : MonoBehaviour, IIDamageable
 
         if (newPhase != currentPhase)
         {
+            bool pause = false;
+            if (newPhase > currentPhase)
+                pause = true;
             currentPhase = newPhase;
             Debug.Log($"[BossHealth] Phase changed → {currentPhase}");
             OnPhaseChanged?.Invoke(currentPhase);
+            if (pause)
+                gameManager.PhaseShift();
         }
     }
-    
+
+    public void SaveSnapshot()
+    {
+        Debug.Log("BossHealth SaveSnapshot called savedhealth " + savedHealth + " current health " + currentHealth);
+        savedHealth = CurrentHealth;
+        savedPhase = currentPhase;
+        Debug.Log("BossHealth SaveSnapshot finished savedhealth " + savedHealth + " current health " + currentHealth);
+    }
+
+    public void RestoreBoss()
+    {
+        TakeDamage((savedHealth-currentHealth)*-1);
+    }
 }

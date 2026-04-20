@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IResettable
 {
     public float moveSpeed = 5f;
     public float dodgeSpeed = 12f;
@@ -28,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
 
     public SwordHitBox swordHitbox;// this is to grab a reference to the player SwordHitbox child object to
                                    // manage its collider via an animation event.
+    private int savedEndurance;
+    private int savedMaxEndurance;
+    private float savedRechage;
                                     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", 0);
         animator.SetFloat("MoveX", lastMoveDirection.x);
         animator.SetFloat("MoveY", lastMoveDirection.y);
+        ResetManager.Register(this);
 
     }
 
@@ -158,5 +162,19 @@ public class PlayerMovement : MonoBehaviour
     public float MaximumHealth
     {
         get { return (float)maxEndurance; }
+    }
+
+    public void SaveSnapshot()
+    {
+        savedEndurance = currentEndurance;
+        savedMaxEndurance = maxEndurance;
+        savedRechage = enduranceRechargeTime;
+    }
+
+    public void RestoreSnapshot()
+    {
+        currentEndurance = savedEndurance;
+        maxEndurance = savedMaxEndurance;
+        enduranceRechargeTime = savedRechage;
     }
 }
