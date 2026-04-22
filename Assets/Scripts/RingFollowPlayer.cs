@@ -21,5 +21,6 @@ public class RingFollowPlayer : MonoBehaviour
             Instantiate(ringPrefab, playerTransform.position, Quaternion.identity);
             yield return new WaitForSeconds(TimeBetweenRings);
         }
+        Destroy(gameObject);
     }
 }
