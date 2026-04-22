@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2749684164616801910, guid: 58a07e5ad3326774ca7504e33cd6d520, type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2749684164616801910, guid: 58a07e5ad3326774ca7504e33cd6d520, type: 3}
       propertyPath: bulletCount
@@ -75,6 +75,10 @@ PrefabInstance:
     - target: {fileID: 2749684164616801910, guid: 58a07e5ad3326774ca7504e33cd6d520, type: 3}
       propertyPath: maxGeneration
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3236058213410178819, guid: 58a07e5ad3326774ca7504e33cd6d520, type: 3}
+      propertyPath: damage
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -48,6 +48,12 @@ public class ExplodingBullet : MonoBehaviour
         isInitialized = true;
     }
 
+    //In the event that a bullet hits a wall, this method allows you to explode the bullet.
+    public void hitWallExplode()
+    {
+        Explode();
+    }
+
     private void Explode()
     {
         

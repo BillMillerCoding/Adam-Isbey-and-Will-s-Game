@@ -1311,7 +1311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4364168135801125733, guid: f76cf6d28ab8b614db70c01d18c4ff61, type: 3}
       propertyPath: bulletCount
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5942702063295495026, guid: f76cf6d28ab8b614db70c01d18c4ff61, type: 3}
       propertyPath: attacks.Array.size

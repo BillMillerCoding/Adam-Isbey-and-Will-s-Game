@@ -170,6 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c420b3a2d3c2242823e1736441937b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletHitbox
+  damage: 10
 --- !u!114 &6789637233599408727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +186,6 @@ MonoBehaviour:
   moveDirection: {x: 0, y: 0}
   moveSpeed: 3
   lifetime: 3
-  bulletCount: 6
+  bulletCount: 5
   generation: 0
   maxGeneration: 2
