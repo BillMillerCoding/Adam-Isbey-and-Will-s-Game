@@ -16,5 +16,5 @@ MonoBehaviour:
   animationTrigger: triggerSlash
   preferredRing: 0
   cooldown: 3
-  weight: 0
+  weight: 1
   fallbackDuration: 1
