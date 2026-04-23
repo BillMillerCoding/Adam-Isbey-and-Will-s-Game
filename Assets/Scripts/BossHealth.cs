@@ -93,6 +93,7 @@ public class BossHealth : MonoBehaviour, IIDamageable
     /// </summary>
     private void EvaluatePhase()
     {
+        
         int newPhase;
         float pct = HealthPercent;
 
@@ -102,7 +103,7 @@ public class BossHealth : MonoBehaviour, IIDamageable
             newPhase = 2;
         else
             newPhase = 3;
-
+        
         if (newPhase != currentPhase)
         {
             bool pause = false;
@@ -118,14 +119,15 @@ public class BossHealth : MonoBehaviour, IIDamageable
 
     public void SaveSnapshot()
     {
-        Debug.Log("BossHealth SaveSnapshot called savedhealth " + savedHealth + " current health " + currentHealth);
+        
         savedHealth = CurrentHealth;
         savedPhase = currentPhase;
-        Debug.Log("BossHealth SaveSnapshot finished savedhealth " + savedHealth + " current health " + currentHealth);
+        
     }
 
     public void RestoreBoss()
     {
+        
         TakeDamage((savedHealth-currentHealth)*-1);
     }
 }

@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI time;
     private float startTime;
+    private int savedScore;
 
 
 
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
         playerHealth.SaveSnapshot();
         playerMovement.SaveSnapshot();
         bossHealth.SaveSnapshot();
+        savedScore = score;
     }
 
     public void LoadState()
@@ -41,6 +43,7 @@ public class GameManager : MonoBehaviour
         playerMovement.RestoreSnapshot();
         playerHealth.RestoreSnapshot();
         bossHealth.RestoreBoss();
+        score = savedScore;
     }
     
     
@@ -56,7 +59,7 @@ public class GameManager : MonoBehaviour
         playerHealth = player.GetComponent<PlayerHealth>();
         playerMovement = player.GetComponent<PlayerMovement>();
         bossHealth = boss.GetComponent<BossHealth>();
-        SetState(GameState.Playing);
+        Play();
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
@@ -133,25 +136,44 @@ public class GameManager : MonoBehaviour
     }
     
 
-    public void CalcScore()
+    public void CalcScore(int round, float hits, float elapsedTime)
     {
-        score += 1000000;
+        if (round == 1)
+        {
+            if (100 - hits < 1)
+                return;
+            if (elapsedTime > 30)
+                score += (int)((100 - hits) * 1.5);
+            else
+                score += (int)(100 - hits);
+        }
+        else
+        {
+            if (150 - hits < 1)
+                return;
+            if (elapsedTime > 30)
+                score += (int)((150 - hits) * 1.5);
+            else
+                score += (int)(150 - hits);
+        }
     }
 
     public void UpHits()
     {
-        if (score > 1000)
+        if (score > 20)
         {
-            score -= 1000;
+            score -= 20;
+            playerHealth.increaseHealth(10);
             scoreText.text = score.ToString("N0");
         }
     }
 
     public void UpEnd()
     {
-        if (score > 1000)
+        if (score > 30)
         {
-            score -= 1000;
+            score -= 30;
+            playerMovement.increaseEndurance(1);
             scoreText.text = score.ToString("N0");
         }
     }
@@ -180,7 +202,7 @@ public class GameManager : MonoBehaviour
                 time.text = TimeFormat(elapsedTime);
                 float lostHP = playerHealth.MaximumHealth - playerHealth.currentHealth;
                 healthText.text = lostHP.ToString("F0");
-                CalcScore();
+                CalcScore(prev, lostHP, elapsedTime);
                 scoreText.text = score.ToString("N0");
                 menu.SetActive(true);
                 UI.SetActive(false);

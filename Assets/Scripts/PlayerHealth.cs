@@ -54,10 +54,18 @@ public class PlayerHealth : MonoBehaviour, IIDamageable, IResettable
         popup.Initialize(worldPos, message, color);
     }
 
+    public void increaseHealth(float amount)
+    {
+        currentHealth += amount;
+        maxHealth += amount;
+        healthBar.SetHealth( currentHealth );
+        healthBar.SetMaxHealth( maxHealth );
+    }
+
 
     public void SaveSnapshot()
     {
-        savedHealth = currentHealth;
+        savedHealth = savedHealth == 0? maxHealth : currentHealth;
         savedMaxHealth = maxHealth;
     }
 
@@ -65,5 +73,7 @@ public class PlayerHealth : MonoBehaviour, IIDamageable, IResettable
     {
         currentHealth = savedHealth;
         maxHealth = savedMaxHealth;
+        healthBar.SetHealth( currentHealth );
+        healthBar.SetMaxHealth( maxHealth );
     }
 }

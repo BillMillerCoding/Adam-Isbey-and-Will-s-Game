@@ -164,9 +164,15 @@ public class PlayerMovement : MonoBehaviour, IResettable
         get { return (float)maxEndurance; }
     }
 
+    public void increaseEndurance(int amount)
+    {
+        maxEndurance += amount;
+        staminaBar.SetMaxHealth( maxEndurance );
+    }
+
     public void SaveSnapshot()
     {
-        savedEndurance = currentEndurance;
+        savedEndurance = savedEndurance == 0 ? maxEndurance : currentEndurance;
         savedMaxEndurance = maxEndurance;
         savedRechage = enduranceRechargeTime;
     }
@@ -176,5 +182,7 @@ public class PlayerMovement : MonoBehaviour, IResettable
         currentEndurance = savedEndurance;
         maxEndurance = savedMaxEndurance;
         enduranceRechargeTime = savedRechage;
+        staminaBar.SetMaxHealth( maxEndurance );
+        staminaBar.SetHealth( currentEndurance );
     }
 }
