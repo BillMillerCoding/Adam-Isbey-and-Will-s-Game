@@ -1,0 +1,1705 @@
+fileFormatVersion: 2
+guid: 7363791c08440b840a83bde8781d032e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5053349901674973138
+    second: NuclearBlastBossChargeAndFire_0
+  - first:
+      213: -245887428747225811
+    second: NuclearBlastBossChargeAndFire_1
+  - first:
+      213: -2290341518400787977
+    second: NuclearBlastBossChargeAndFire_2
+  - first:
+      213: 3145470843234434954
+    second: NuclearBlastBossChargeAndFire_3
+  - first:
+      213: 4662622782363590497
+    second: NuclearBlastBossChargeAndFire_4
+  - first:
+      213: 5523786762511497081
+    second: NuclearBlastBossChargeAndFire_5
+  - first:
+      213: 986163000098578337
+    second: NuclearBlastBossChargeAndFire_6
+  - first:
+      213: 6061435454576724112
+    second: NuclearBlastBossChargeAndFire_7
+  - first:
+      213: -2362353200156822409
+    second: NuclearBlastBossChargeAndFire_8
+  - first:
+      213: -1107101212331178183
+    second: NuclearBlastBossChargeAndFire_9
+  - first:
+      213: 3776872472555449235
+    second: NuclearBlastBossChargeAndFire_10
+  - first:
+      213: -2582471540464921921
+    second: NuclearBlastBossChargeAndFire_11
+  - first:
+      213: 9131195230909962772
+    second: NuclearBlastBossChargeAndFire_12
+  - first:
+      213: -7891935270584937538
+    second: NuclearBlastBossChargeAndFire_13
+  - first:
+      213: -891986261870338761
+    second: NuclearBlastBossChargeAndFire_14
+  - first:
+      213: 4228815089376410394
+    second: NuclearBlastBossChargeAndFire_15
+  - first:
+      213: -5812772525937995524
+    second: NuclearBlastBossChargeAndFire_16
+  - first:
+      213: 4398450691489874362
+    second: NuclearBlastBossChargeAndFire_17
+  - first:
+      213: -7537614439705933619
+    second: NuclearBlastBossChargeAndFire_18
+  - first:
+      213: 936191923909562058
+    second: NuclearBlastBossChargeAndFire_19
+  - first:
+      213: -7081471682765313516
+    second: NuclearBlastBossChargeAndFire_20
+  - first:
+      213: 6798846948990806504
+    second: NuclearBlastBossChargeAndFire_21
+  - first:
+      213: -8454575161372743582
+    second: NuclearBlastBossChargeAndFire_22
+  - first:
+      213: 607086893888694437
+    second: NuclearBlastBossChargeAndFire_23
+  - first:
+      213: -7962887274480507052
+    second: NuclearBlastBossChargeAndFire_24
+  - first:
+      213: 6659033098480543351
+    second: NuclearBlastBossChargeAndFire_25
+  - first:
+      213: 593598017421513385
+    second: NuclearBlastBossChargeAndFire_26
+  - first:
+      213: -500859972764210746
+    second: NuclearBlastBossChargeAndFire_27
+  - first:
+      213: -7336327239830454675
+    second: NuclearBlastBossChargeAndFire_28
+  - first:
+      213: 4126670566706389273
+    second: NuclearBlastBossChargeAndFire_29
+  - first:
+      213: 2277521383799948868
+    second: NuclearBlastBossChargeAndFire_30
+  - first:
+      213: -6624050499241859740
+    second: NuclearBlastBossChargeAndFire_31
+  - first:
+      213: 81811212341623172
+    second: NuclearBlastBossChargeAndFire_32
+  - first:
+      213: -2330275948552159894
+    second: NuclearBlastBossChargeAndFire_33
+  - first:
+      213: 2692439973314048238
+    second: NuclearBlastBossChargeAndFire_34
+  - first:
+      213: -7833901958242379551
+    second: NuclearBlastBossChargeAndFire_35
+  - first:
+      213: -3357845810980696758
+    second: NuclearBlastBossChargeAndFire_36
+  - first:
+      213: 3040619923604024028
+    second: NuclearBlastBossChargeAndFire_37
+  - first:
+      213: 6835517184482646046
+    second: NuclearBlastBossChargeAndFire_38
+  - first:
+      213: -6273130184819045901
+    second: NuclearBlastBossChargeAndFire_39
+  - first:
+      213: 5662105198078088188
+    second: NuclearBlastBossChargeAndFire_40
+  - first:
+      213: -833245312447015014
+    second: NuclearBlastBossChargeAndFire_41
+  - first:
+      213: 8163325974458816517
+    second: NuclearBlastBossChargeAndFire_42
+  - first:
+      213: -4196426000148703151
+    second: NuclearBlastBossChargeAndFire_43
+  - first:
+      213: -3352352481177942636
+    second: NuclearBlastBossChargeAndFire_44
+  - first:
+      213: -2859772434630534220
+    second: NuclearBlastBossChargeAndFire_45
+  - first:
+      213: 5014169395631895443
+    second: NuclearBlastBossChargeAndFire_46
+  - first:
+      213: 625980879165893467
+    second: NuclearBlastBossChargeAndFire_47
+  - first:
+      213: -2250780331722672794
+    second: NuclearBlastBossChargeAndFire_48
+  - first:
+      213: 4630567496044778481
+    second: NuclearBlastBossChargeAndFire_49
+  - first:
+      213: 6702323752735714896
+    second: NuclearBlastBossChargeAndFire_50
+  - first:
+      213: 8868521689741568558
+    second: NuclearBlastBossChargeAndFire_51
+  - first:
+      213: 5148280016029392695
+    second: NuclearBlastBossChargeAndFire_52
+  - first:
+      213: 4957957592454481836
+    second: NuclearBlastBossChargeAndFire_53
+  - first:
+      213: -7029925523405690787
+    second: NuclearBlastBossChargeAndFire_54
+  - first:
+      213: -6636874978119385972
+    second: NuclearBlastBossChargeAndFire_55
+  - first:
+      213: -5257956232460804937
+    second: NuclearBlastBossChargeAndFire_56
+  - first:
+      213: -4630416153107954276
+    second: NuclearBlastBossChargeAndFire_57
+  - first:
+      213: 7178851237582520001
+    second: NuclearBlastBossChargeAndFire_58
+  - first:
+      213: 730249110407118772
+    second: NuclearBlastBossChargeAndFire_59
+  - first:
+      213: 1830354629411896907
+    second: NuclearBlastBossChargeAndFire_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_0
+      rect:
+        serializedVersion: 2
+        x: 5624
+        y: 16
+        width: 172
+        height: 91
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2878e8c905eed9b0800000000000000
+      internalID: -5053349901674973138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_1
+      rect:
+        serializedVersion: 2
+        x: 5882
+        y: 13
+        width: 192
+        height: 90
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2599c2bfae669cf0800000000000000
+      internalID: -245887428747225811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_2
+      rect:
+        serializedVersion: 2
+        x: 7523
+        y: 7
+        width: 244
+        height: 103
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9646516821730e0800000000000000
+      internalID: -2290341518400787977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_3
+      rect:
+        serializedVersion: 2
+        x: 7550
+        y: 99
+        width: 18
+        height: 26
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f36560115f6ab20800000000000000
+      internalID: 3145470843234434954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_4
+      rect:
+        serializedVersion: 2
+        x: 7665
+        y: 98
+        width: 18
+        height: 26
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16fdc6887b6f4b040800000000000000
+      internalID: 4662622782363590497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_5
+      rect:
+        serializedVersion: 2
+        x: 7799
+        y: 11
+        width: 257
+        height: 104
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977b0825bce68ac40800000000000000
+      internalID: 5523786762511497081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_6
+      rect:
+        serializedVersion: 2
+        x: 8062
+        y: 0
+        width: 278
+        height: 118
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af528f060e8fad00800000000000000
+      internalID: 986163000098578337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_7
+      rect:
+        serializedVersion: 2
+        x: 5378
+        y: 72
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098010b5e6b8e1450800000000000000
+      internalID: 6061435454576724112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_8
+      rect:
+        serializedVersion: 2
+        x: 5662
+        y: 80
+        width: 5
+        height: 8
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77435aed74c373fd0800000000000000
+      internalID: -2362353200156822409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_9
+      rect:
+        serializedVersion: 2
+        x: 5773
+        y: 77
+        width: 5
+        height: 8
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93788942059c2a0f0800000000000000
+      internalID: -1107101212331178183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_10
+      rect:
+        serializedVersion: 2
+        x: 6178
+        y: 29
+        width: 154
+        height: 56
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b6e98c0852a6430800000000000000
+      internalID: 3776872472555449235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_11
+      rect:
+        serializedVersion: 2
+        x: 6729
+        y: 82
+        width: 8
+        height: 15
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2580401d7392cd0800000000000000
+      internalID: -2582471540464921921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_12
+      rect:
+        serializedVersion: 2
+        x: 6753
+        y: 84
+        width: 13
+        height: 13
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a1121fea588be70800000000000000
+      internalID: 9131195230909962772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_13
+      rect:
+        serializedVersion: 2
+        x: 6762
+        y: 83
+        width: 33
+        height: 8
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb398664fa63a7290800000000000000
+      internalID: -7891935270584937538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_14
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 80
+        width: 8
+        height: 15
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d90b488370f93f0800000000000000
+      internalID: -891986261870338761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_15
+      rect:
+        serializedVersion: 2
+        x: 6849
+        y: 82
+        width: 13
+        height: 13
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1bb7172be4cfaa30800000000000000
+      internalID: 4228815089376410394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_16
+      rect:
+        serializedVersion: 2
+        x: 6858
+        y: 81
+        width: 33
+        height: 8
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0d05f5f22e45fa0800000000000000
+      internalID: -5812772525937995524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_17
+      rect:
+        serializedVersion: 2
+        x: 7003
+        y: 28
+        width: 168
+        height: 65
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab14354999f6a0d30800000000000000
+      internalID: 4398450691489874362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_18
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 29
+        width: 48
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc809736a93056790800000000000000
+      internalID: -7537614439705933619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_19
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 29
+        width: 48
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace083a38950efc00800000000000000
+      internalID: 936191923909562058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_20
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 29
+        width: 48
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a29c5160f89bd90800000000000000
+      internalID: -7081471682765313516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_21
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 29
+        width: 53
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e968dc374b5a5e50800000000000000
+      internalID: 6798846948990806504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_22
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 29
+        width: 57
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268698b5fa05baa80800000000000000
+      internalID: -8454575161372743582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_23
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 29
+        width: 59
+        height: 49
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8e702405ecc6800800000000000000
+      internalID: 607086893888694437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_24
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 29
+        width: 83
+        height: 49
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4576c1a86342e7190800000000000000
+      internalID: -7962887274480507052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_25
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 70
+        width: 6
+        height: 6
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 776608e6253a96c50800000000000000
+      internalID: 6659033098480543351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_26
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 29
+        width: 83
+        height: 47
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a219c77042ec3800800000000000000
+      internalID: 593598017421513385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_27
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 29
+        width: 83
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c96d2922869c09f0800000000000000
+      internalID: -500859972764210746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_28
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 29
+        width: 83
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e32e1be31203a90800000000000000
+      internalID: -7336327239830454675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_29
+      rect:
+        serializedVersion: 2
+        x: 2877
+        y: 29
+        width: 83
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91128913401e44930800000000000000
+      internalID: 4126670566706389273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_30
+      rect:
+        serializedVersion: 2
+        x: 3155
+        y: 29
+        width: 83
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44680c9b1a16b9f10800000000000000
+      internalID: 2277521383799948868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_31
+      rect:
+        serializedVersion: 2
+        x: 3427
+        y: 29
+        width: 95
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465a07aaa25a214a0800000000000000
+      internalID: -6624050499241859740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_32
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 29
+        width: 103
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489344a3dd6a22100800000000000000
+      internalID: 81811212341623172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_33
+      rect:
+        serializedVersion: 2
+        x: 3973
+        y: 29
+        width: 111
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d79e10f5239afd0800000000000000
+      internalID: -2330275948552159894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_34
+      rect:
+        serializedVersion: 2
+        x: 3980
+        y: 68
+        width: 4
+        height: 6
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0327cf3e77d5520800000000000000
+      internalID: 2692439973314048238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_35
+      rect:
+        serializedVersion: 2
+        x: 4252
+        y: 29
+        width: 110
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8d9bdbca3684390800000000000000
+      internalID: -7833901958242379551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_36
+      rect:
+        serializedVersion: 2
+        x: 4259
+        y: 68
+        width: 4
+        height: 6
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d46f986098661d0800000000000000
+      internalID: -3357845810980696758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_37
+      rect:
+        serializedVersion: 2
+        x: 4514
+        y: 29
+        width: 145
+        height: 50
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdaa46be5b3723a20800000000000000
+      internalID: 3040619923604024028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_38
+      rect:
+        serializedVersion: 2
+        x: 4792
+        y: 29
+        width: 147
+        height: 54
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e189a25c9a2acde50800000000000000
+      internalID: 6835517184482646046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_39
+      rect:
+        serializedVersion: 2
+        x: 5072
+        y: 29
+        width: 131
+        height: 54
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f98418555d51f8a0800000000000000
+      internalID: -6273130184819045901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_40
+      rect:
+        serializedVersion: 2
+        x: 5204
+        y: 67
+        width: 14
+        height: 12
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf35654bda6d39e40800000000000000
+      internalID: 5662105198078088188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_41
+      rect:
+        serializedVersion: 2
+        x: 5344
+        y: 71
+        width: 17
+        height: 12
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9716d49dc7bf64f0800000000000000
+      internalID: -833245312447015014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_42
+      rect:
+        serializedVersion: 2
+        x: 5356
+        y: 29
+        width: 136
+        height: 46
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508565df8b5f94170800000000000000
+      internalID: 8163325974458816517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_43
+      rect:
+        serializedVersion: 2
+        x: 5445
+        y: 69
+        width: 17
+        height: 12
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1585ce659cc43c5c0800000000000000
+      internalID: -4196426000148703151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_44
+      rect:
+        serializedVersion: 2
+        x: 5479
+        y: 70
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4954d7d0e2d0a71d0800000000000000
+      internalID: -3352352481177942636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_45
+      rect:
+        serializedVersion: 2
+        x: 6461
+        y: 29
+        width: 145
+        height: 53
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb94675f1c0058d0800000000000000
+      internalID: -2859772434630534220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_46
+      rect:
+        serializedVersion: 2
+        x: 6727
+        y: 61
+        width: 10
+        height: 16
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3933646cf78e59540800000000000000
+      internalID: 5014169395631895443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_47
+      rect:
+        serializedVersion: 2
+        x: 6734
+        y: 29
+        width: 149
+        height: 53
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5baed20b4eefa800800000000000000
+      internalID: 625980879165893467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_48
+      rect:
+        serializedVersion: 2
+        x: 7289
+        y: 28
+        width: 149
+        height: 54
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665fb34a63f93c0e0800000000000000
+      internalID: -2250780331722672794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_49
+      rect:
+        serializedVersion: 2
+        x: 5599
+        y: 62
+        width: 23
+        height: 4
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f318369a94134040800000000000000
+      internalID: 4630567496044778481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_50
+      rect:
+        serializedVersion: 2
+        x: 6886
+        y: 51
+        width: 14
+        height: 16
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ea97351ff630d50800000000000000
+      internalID: 6702323752735714896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_51
+      rect:
+        serializedVersion: 2
+        x: 4084
+        y: 49
+        width: 5
+        height: 4
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2aa4e74d71531b70800000000000000
+      internalID: 8868521689741568558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_52
+      rect:
+        serializedVersion: 2
+        x: 4362
+        y: 51
+        width: 5
+        height: 4
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f9ca7d56d527740800000000000000
+      internalID: 5148280016029392695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_53
+      rect:
+        serializedVersion: 2
+        x: 5205
+        y: 53
+        width: 9
+        height: 6
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca743b579243ec440800000000000000
+      internalID: 4957957592454481836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_54
+      rect:
+        serializedVersion: 2
+        x: 6721
+        y: 48
+        width: 15
+        height: 8
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58a3fb8bffa07e90800000000000000
+      internalID: -7029925523405690787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_55
+      rect:
+        serializedVersion: 2
+        x: 5203
+        y: 41
+        width: 10
+        height: 8
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8cf38efe5515e3a0800000000000000
+      internalID: -6636874978119385972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_56
+      rect:
+        serializedVersion: 2
+        x: 5483
+        y: 32
+        width: 18
+        height: 11
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc5f971aacf707b0800000000000000
+      internalID: -5257956232460804937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_57
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 39
+        width: 8
+        height: 6
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9505cfaa057dbfb0800000000000000
+      internalID: -4630416153107954276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_58
+      rect:
+        serializedVersion: 2
+        x: 5774
+        y: 33
+        width: 8
+        height: 5
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ceba775a2760a360800000000000000
+      internalID: 7178851237582520001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_59
+      rect:
+        serializedVersion: 2
+        x: 6763
+        y: 25
+        width: 6
+        height: 9
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf7c5762bd522a00800000000000000
+      internalID: 730249110407118772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NuclearBlastBossChargeAndFire_60
+      rect:
+        serializedVersion: 2
+        x: 6859
+        y: 23
+        width: 6
+        height: 9
+      alignment: 9
+      pivot: {x: 0.52, y: -0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e761b76d9b66910800000000000000
+      internalID: 1830354629411896907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b3fce43601eda034484f48ae16bc8b1f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5199999809265137,"y":-0.6499999761581421},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      NuclearBlastBossChargeAndFire_0: -5053349901674973138
+      NuclearBlastBossChargeAndFire_1: -245887428747225811
+      NuclearBlastBossChargeAndFire_10: 3776872472555449235
+      NuclearBlastBossChargeAndFire_11: -2582471540464921921
+      NuclearBlastBossChargeAndFire_12: 9131195230909962772
+      NuclearBlastBossChargeAndFire_13: -7891935270584937538
+      NuclearBlastBossChargeAndFire_14: -891986261870338761
+      NuclearBlastBossChargeAndFire_15: 4228815089376410394
+      NuclearBlastBossChargeAndFire_16: -5812772525937995524
+      NuclearBlastBossChargeAndFire_17: 4398450691489874362
+      NuclearBlastBossChargeAndFire_18: -7537614439705933619
+      NuclearBlastBossChargeAndFire_19: 936191923909562058
+      NuclearBlastBossChargeAndFire_2: -2290341518400787977
+      NuclearBlastBossChargeAndFire_20: -7081471682765313516
+      NuclearBlastBossChargeAndFire_21: 6798846948990806504
+      NuclearBlastBossChargeAndFire_22: -8454575161372743582
+      NuclearBlastBossChargeAndFire_23: 607086893888694437
+      NuclearBlastBossChargeAndFire_24: -7962887274480507052
+      NuclearBlastBossChargeAndFire_25: 6659033098480543351
+      NuclearBlastBossChargeAndFire_26: 593598017421513385
+      NuclearBlastBossChargeAndFire_27: -500859972764210746
+      NuclearBlastBossChargeAndFire_28: -7336327239830454675
+      NuclearBlastBossChargeAndFire_29: 4126670566706389273
+      NuclearBlastBossChargeAndFire_3: 3145470843234434954
+      NuclearBlastBossChargeAndFire_30: 2277521383799948868
+      NuclearBlastBossChargeAndFire_31: -6624050499241859740
+      NuclearBlastBossChargeAndFire_32: 81811212341623172
+      NuclearBlastBossChargeAndFire_33: -2330275948552159894
+      NuclearBlastBossChargeAndFire_34: 2692439973314048238
+      NuclearBlastBossChargeAndFire_35: -7833901958242379551
+      NuclearBlastBossChargeAndFire_36: -3357845810980696758
+      NuclearBlastBossChargeAndFire_37: 3040619923604024028
+      NuclearBlastBossChargeAndFire_38: 6835517184482646046
+      NuclearBlastBossChargeAndFire_39: -6273130184819045901
+      NuclearBlastBossChargeAndFire_4: 4662622782363590497
+      NuclearBlastBossChargeAndFire_40: 5662105198078088188
+      NuclearBlastBossChargeAndFire_41: -833245312447015014
+      NuclearBlastBossChargeAndFire_42: 8163325974458816517
+      NuclearBlastBossChargeAndFire_43: -4196426000148703151
+      NuclearBlastBossChargeAndFire_44: -3352352481177942636
+      NuclearBlastBossChargeAndFire_45: -2859772434630534220
+      NuclearBlastBossChargeAndFire_46: 5014169395631895443
+      NuclearBlastBossChargeAndFire_47: 625980879165893467
+      NuclearBlastBossChargeAndFire_48: -2250780331722672794
+      NuclearBlastBossChargeAndFire_49: 4630567496044778481
+      NuclearBlastBossChargeAndFire_5: 5523786762511497081
+      NuclearBlastBossChargeAndFire_50: 6702323752735714896
+      NuclearBlastBossChargeAndFire_51: 8868521689741568558
+      NuclearBlastBossChargeAndFire_52: 5148280016029392695
+      NuclearBlastBossChargeAndFire_53: 4957957592454481836
+      NuclearBlastBossChargeAndFire_54: -7029925523405690787
+      NuclearBlastBossChargeAndFire_55: -6636874978119385972
+      NuclearBlastBossChargeAndFire_56: -5257956232460804937
+      NuclearBlastBossChargeAndFire_57: -4630416153107954276
+      NuclearBlastBossChargeAndFire_58: 7178851237582520001
+      NuclearBlastBossChargeAndFire_59: 730249110407118772
+      NuclearBlastBossChargeAndFire_6: 986163000098578337
+      NuclearBlastBossChargeAndFire_60: 1830354629411896907
+      NuclearBlastBossChargeAndFire_7: 6061435454576724112
+      NuclearBlastBossChargeAndFire_8: -2362353200156822409
+      NuclearBlastBossChargeAndFire_9: -1107101212331178183
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3f99189cdac78f4ab65b2a0596a5cc9, type: 3}
-  m_Name: Arm Slash
+  m_Name: ExplodingRing
   m_EditorClassIdentifier: Assembly-CSharp::BossAttackData
-  attackName: Slash Attack
-  animationTrigger: triggerSlash
-  preferredRing: 0
-  cooldown: 3
-  weight: 2
+  attackName: ExplodingRing
+  animationTrigger: triggerExplodingRing
+  preferredRing: 2
+  cooldown: 2
+  weight: 1
   fallbackDuration: 1
