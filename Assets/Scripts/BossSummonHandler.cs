@@ -45,7 +45,9 @@ public class BossSummonHandler : MonoBehaviour
 
         // Determine spawn position
         Vector2 spawnPos;
-        if (chosen.spawnAtPlayer && playerTarget != null)
+        if (chosen.useFixedWorldPosition)
+            spawnPos = chosen.fixedWorldPosition;
+        else if (chosen.spawnAtPlayer && playerTarget != null)
             spawnPos = (Vector2)playerTarget.position + chosen.spawnOffset;
         else
             spawnPos = (Vector2)transform.position + chosen.spawnOffset;
@@ -53,7 +55,7 @@ public class BossSummonHandler : MonoBehaviour
         // Instantiate the prefab
         if (chosen.prefab != null)
         {
-            Instantiate(chosen.prefab, spawnPos, Quaternion.identity);
+            Instantiate(chosen.prefab, spawnPos, chosen.prefab.transform.rotation);
         }
         else
         {

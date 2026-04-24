@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3612734636216260753
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -2253911629886400664, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_Name
+      value: PinkLazerHorizontal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 43d726f46efeb1042b509c140ee80f5e, type: 2}
+    - target: {fileID: 3626916397498700004, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 414712398963419611}
+  m_SourcePrefab: {fileID: -8435245712485981826, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+--- !u!1 &5952488027519733753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: 3eeaed86ad32e3c498d10f3f25207f6d, type: 3}
+  m_PrefabInstance: {fileID: 3612734636216260753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &414712398963419611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5952488027519733753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6a6e4f010a82a43a8a3ea778d51e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  pinkLazerHurtboxPrefab: {fileID: 739091919968878257, guid: 4126fd7452fa0a741aa80c6c42818211, type: 3}
+  spawnLeftUnits: 19
+  spawnUpUnits: 2.7

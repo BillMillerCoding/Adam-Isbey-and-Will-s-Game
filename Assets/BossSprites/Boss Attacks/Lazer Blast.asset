@@ -16,5 +16,5 @@ MonoBehaviour:
   animationTrigger: StartLazerBlast
   preferredRing: 1
   cooldown: 5
-  weight: 1
+  weight: 0.8
   fallbackDuration: 1
