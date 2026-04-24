@@ -19,6 +19,10 @@ public class BossMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Transform playerTarget;
     private SpriteRenderer spriteRenderer;
+    [Header("References")]
+    [SerializeField] private Transform firePoint;
+
+    private Vector3 firePointBaseLocalPos;
 
     [Header("Debug (read-only)")]
     [SerializeField] private bool isMoving = false;
@@ -29,6 +33,25 @@ public class BossMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+
+        // Cache the fire point's original local position so we can mirror it when facing changes.
+        if (firePoint == null)
+        {
+            Transform[] children = GetComponentsInChildren<Transform>(true);
+            for (int i = 0; i < children.Length; i++)
+            {
+                if (children[i].name == "FirePoint")
+                {
+                    firePoint = children[i];
+                    break;
+                }
+            }
+        }
+
+        if (firePoint != null)
+        {
+            firePointBaseLocalPos = firePoint.localPosition;
+        }
     }
 
     /// <summary>Must be called once by BossController to supply the player reference.</summary>
@@ -66,9 +89,15 @@ public class BossMovement : MonoBehaviour
     private void FacePlayer()
     {
         if (spriteRenderer == null) return;
-        spriteRenderer.flipX = playerTarget.position.x < transform.position.x;
-    }
+        bool facingLeft = playerTarget.position.x < transform.position.x;
+        spriteRenderer.flipX = facingLeft;
 
+        if (firePoint != null)
+        {
+            float mirroredX = facingLeft ? -Mathf.Abs(firePointBaseLocalPos.x) : Mathf.Abs(firePointBaseLocalPos.x);
+            firePoint.localPosition = new Vector3(mirroredX, firePointBaseLocalPos.y, firePointBaseLocalPos.z);
+        }
+    }
     /// <summary>Begin moving toward the player.</summary>
     public void StartApproach()
     {
