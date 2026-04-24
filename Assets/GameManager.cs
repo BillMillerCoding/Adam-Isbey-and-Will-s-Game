@@ -1,5 +1,7 @@
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI time;
     private float startTime;
     private int savedScore;
+    public GameObject restartButton;
 
 
 
@@ -45,7 +48,11 @@ public class GameManager : MonoBehaviour
         bossHealth.RestoreBoss();
         score = savedScore;
     }
-    
+
+    public int GetScore()
+    {
+        return score;
+    }
     
 
 
@@ -82,11 +89,12 @@ public class GameManager : MonoBehaviour
         SetState(GameState.GameOver);
     }
 
-    public void endGame()
+    public async void endGame()
     {
         // Debug.Log("The Player Wins!");
         // Time.timeScale = 0f;
         // VictoryText.SetActive(true);
+        await Task.Delay(2000);
         SetState(GameState.EndOfGame);
     }
 
@@ -142,19 +150,28 @@ public class GameManager : MonoBehaviour
         {
             if (100 - hits < 1)
                 return;
-            if (elapsedTime > 30)
+            if (elapsedTime < 30)
                 score += (int)((100 - hits) * 1.5);
             else
                 score += (int)(100 - hits);
         }
-        else
+        else if (round == 2)
         {
             if (150 - hits < 1)
                 return;
-            if (elapsedTime > 30)
+            if (elapsedTime < 30)
                 score += (int)((150 - hits) * 1.5);
             else
                 score += (int)(150 - hits);
+        }
+        else
+        {
+            if (200 - hits < 1)
+                return;
+            if (elapsedTime < 30)
+                score += (int)((200 - hits) * 1.5);
+            else
+                score += (int)(200 - hits);
         }
     }
 
@@ -183,6 +200,10 @@ public class GameManager : MonoBehaviour
 
     private void HandleStateChanged(GameState state)
     {
+        int prev ;
+        string round ;
+        float elapsedTime ;
+        float lostHP;
         switch (state)
         {
             case GameState.Playing:
@@ -195,12 +216,12 @@ public class GameManager : MonoBehaviour
 
             case GameState.Paused:
                 Time.timeScale = 0f;
-                int prev = phase - 1;
-                string round = "Round " + prev;
-                float elapsedTime = Time.time - startTime;
+                prev = phase - 1;
+                round = "Round " + prev;
+                elapsedTime = Time.time - startTime;
                 menuTitle.text = round;
                 time.text = TimeFormat(elapsedTime);
-                float lostHP = playerHealth.MaximumHealth - playerHealth.currentHealth;
+                lostHP = playerHealth.MaximumHealth - playerHealth.currentHealth;
                 healthText.text = lostHP.ToString("F0");
                 CalcScore(prev, lostHP, elapsedTime);
                 scoreText.text = score.ToString("N0");
@@ -213,15 +234,24 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Game Over");
                 Time.timeScale = 0f;
                 GameOver.SetActive(true);
+                restartButton.SetActive(true);
+                Cursor.visible = true;
                 break;
 
             case GameState.Intro:
                 //will implement something
                 break;
             case GameState.EndOfGame:
+                
                 Debug.Log("The Player Wins!");
-                Time.timeScale = 0f;
-                VictoryText.SetActive(true);
+                prev = phase - 1;
+                elapsedTime = Time.time - startTime;
+                lostHP = playerHealth.MaximumHealth - playerHealth.currentHealth;
+                CalcScore(prev, lostHP, elapsedTime);
+                Cursor.visible = true;
+                //Time.timeScale = 0f;
+                SceneManager.LoadScene(2);
+                //VictoryText.SetActive(true);
                 break;
         }
     }
