@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   speed: 10
+  damage: 5
 --- !u!108 &7748204452419769711
 Light:
   m_ObjectHideFlags: 0

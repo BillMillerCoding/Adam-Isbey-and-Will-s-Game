@@ -16,5 +16,5 @@ MonoBehaviour:
   animationTrigger: triggerNuclearCannon
   preferredRing: 2
   cooldown: 3
-  weight: 1
+  weight: 0.2
   fallbackDuration: 1
