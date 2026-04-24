@@ -7,10 +7,10 @@ public class SpawnerExplodingBullets : MonoBehaviour
     //This script goes on the boss and is used to spawn the initial right of exploding bullets around the boss.
     
     [SerializeField] GameObject bulletPrefab;
+    [SerializeField] private int bulletCount;
 
     public void SpawnRing()
     {
-        int bulletCount = 4;
         float angleStep = 360f / bulletCount;
         for(int bulletIndex = 0; bulletIndex < bulletCount; bulletIndex++)
         {
