@@ -5,9 +5,10 @@ public class ExplodingBullet : MonoBehaviour
     [SerializeField] private Vector2 moveDirection;
     [SerializeField] private float moveSpeed;
     [SerializeField] private float lifetime;//how long before bullet explodes.
-    private GameObject bulletPrefab;//prefab of bullet.
+    [SerializeField] private int bulletCount;// this is how many bullets will explode in a ring.
     [SerializeField] private int generation;//this determines what generation a bullet is. Generations 1 and 2 spawn more bullets, Gen 3 doesn't.
     [SerializeField] private int maxGeneration = 2;
+    private GameObject bulletPrefab;//prefab of bullet.
 
     private Rigidbody2D rb;//rigidbody of bullet.
     private float timer = 0;//counts up until projectile explodes.
@@ -47,10 +48,16 @@ public class ExplodingBullet : MonoBehaviour
         isInitialized = true;
     }
 
+    //In the event that a bullet hits a wall, this method allows you to explode the bullet.
+    public void hitWallExplode()
+    {
+        Explode();
+    }
+
     private void Explode()
     {
         
-        int bulletCount = 4;
+        
         float angleStep = 360f / bulletCount;
         float angle = 0;
 
