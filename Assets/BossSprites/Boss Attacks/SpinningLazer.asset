@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossAttackData
   attackName: SpinningLazer
   animationTrigger: TriggerSpinningLazer
-  preferredRing: 0
-  cooldown: 5
-  weight: 1
+  preferredRing: 1
+  cooldown: 3
+  weight: 0.6
   fallbackDuration: 1

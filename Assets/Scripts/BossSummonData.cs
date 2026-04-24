@@ -22,6 +22,12 @@ public class BossSummonData : ScriptableObject
     [Tooltip("If true, spawn at the player's position instead of relative to the boss")]
     public bool spawnAtPlayer = false;
 
+    [Tooltip("If true, always spawn at a fixed world coordinate")]
+    public bool useFixedWorldPosition = false;
+
+    [Tooltip("World coordinate used when Use Fixed World Position is enabled")]
+    public Vector2 fixedWorldPosition = Vector2.zero;
+
     [Header("Cooldown")]
     [Tooltip("Minimum seconds between uses of this summon")]
     public float cooldown = 5f;

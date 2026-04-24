@@ -25,12 +25,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6783758439850696216}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 0.02, z: 0}
-  m_LocalScale: {x: 0.654, y: 0.6194, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.006, y: 0.504, z: 0}
+  m_LocalScale: {x: 0.1308, y: 0.12388001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7908038542843021792}
+  m_Father: {fileID: 7698543693860833340}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4106623379064818221
 SpriteRenderer:
@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: d3cfa0e82469172478e5c9798029f0f7, type: 2}
     - target: {fileID: 7868582251768753547, guid: 26a1b19719aac8141a8b2f378ab3280e, type: 3}
       propertyPath: m_Name
-      value: Boss 1
+      value: AdamsExplodingRIngBoss
       objectReference: {fileID: 0}
     - target: {fileID: 7868582251768753547, guid: 26a1b19719aac8141a8b2f378ab3280e, type: 3}
       propertyPath: m_Layer
@@ -226,7 +226,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 8775723277335794671, guid: 26a1b19719aac8141a8b2f378ab3280e, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 9124827515743736371, guid: 26a1b19719aac8141a8b2f378ab3280e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3897482285878058611}
     m_AddedComponents:
@@ -269,8 +269,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnerExplodingBullets
   bulletPrefab: {fileID: 4182373778199221188, guid: 75a773c0f3c0d46478243c1183ab68ab, type: 3}
---- !u!4 &7908038542843021792 stripped
+  bulletCount: 0
+--- !u!4 &7698543693860833340 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8775723277335794671, guid: 26a1b19719aac8141a8b2f378ab3280e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9124827515743736371, guid: 26a1b19719aac8141a8b2f378ab3280e, type: 3}
   m_PrefabInstance: {fileID: 1474751808424090127}
   m_PrefabAsset: {fileID: 0}
