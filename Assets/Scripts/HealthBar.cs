@@ -21,4 +21,9 @@ public class HealthBar : MonoBehaviour
     {
         healthBar.value = hp;
     }
+    
+    public void SetMaxHealth(float hp)
+    {
+        healthBar.maxValue = hp;
+    }
 }
