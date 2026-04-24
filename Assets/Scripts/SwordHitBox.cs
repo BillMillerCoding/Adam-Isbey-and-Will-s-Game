@@ -1,5 +1,5 @@
 using UnityEngine;
-//Test to merge.
+
 public class SwordHitBox : MonoBehaviour
 {
     public float damage = 1f;

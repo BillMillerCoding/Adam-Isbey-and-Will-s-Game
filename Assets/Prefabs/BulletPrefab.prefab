@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7175909489866858972}
   - component: {fileID: 786415306974379406}
   - component: {fileID: 7113975839296831469}
-  - component: {fileID: 6789637233599408727}
+  - component: {fileID: 3533357454361239357}
   m_Layer: 0
   m_Name: BulletPrefab
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4182373778199221188}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.01233, y: -1.94821, z: 0}
+  m_LocalPosition: {x: 0.50342, y: -0.81503, z: 0}
   m_LocalScale: {x: 3.5, y: 3.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -170,8 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c420b3a2d3c2242823e1736441937b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletHitbox
-  damage: 10
---- !u!114 &6789637233599408727
+--- !u!114 &3533357454361239357
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,8 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExplodingBullet
   moveDirection: {x: 0, y: 0}
-  moveSpeed: 3
-  lifetime: 3
-  bulletCount: 5
+  moveSpeed: 4
+  lifetime: 1
   generation: 0
-  maxGeneration: 2
+  maxGeneration: 4
