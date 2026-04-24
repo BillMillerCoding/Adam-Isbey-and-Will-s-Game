@@ -26,6 +26,7 @@ public class BossHealth : MonoBehaviour, IIDamageable
     [Header("Debug (read-only)")]
     [SerializeField] private int currentPhase = 1;
     public float MaxHealth => maxHealth;
+    public Animator animator;
     
    private float savedHealth;
     private int savedPhase;
@@ -70,6 +71,7 @@ public class BossHealth : MonoBehaviour, IIDamageable
         if (IsDead)
         {
             Debug.Log("[BossHealth] Boss has died.");
+            animator.SetTrigger("died");
             OnDeath?.Invoke();
         }
     }
