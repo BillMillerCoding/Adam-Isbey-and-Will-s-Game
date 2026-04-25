@@ -128,7 +128,7 @@ public class PlayerMovement : MonoBehaviour, IResettable
             rb.linearVelocity = moveInput * moveSpeed;//these two lines handle player running.
             animator.SetFloat("Speed", moveInput.magnitude); //.magnitude applies pythagorean theorem to the coordinates of moveInput.
 
-            if (Mouse.current.leftButton.isPressed)//handles attack animations
+            if (Mouse.current.leftButton.wasReleasedThisFrame)//handles attack animations
             {
                 animator.SetFloat("MoveX", aimDirection.x);//attack animation is based on direction of crosshair
                 animator.SetFloat("MoveY", aimDirection.y);
