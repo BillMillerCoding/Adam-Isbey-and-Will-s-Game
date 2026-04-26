@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI time;
+    public TextMeshProUGUI bossChat;
     private float startTime;
     private int savedScore;
     public GameObject restartButton;
@@ -152,7 +153,7 @@ public class GameManager : MonoBehaviour
         {
             if (100 - hits < 1)
                 return;
-            if (elapsedTime < 30)
+            if (elapsedTime < 85)
                 score += (int)((100 - hits) * 1.5);
             else
                 score += (int)(100 - hits);
@@ -182,37 +183,37 @@ public class GameManager : MonoBehaviour
         if (score > 20)
         {
             score -= 20;
-            playerHealth.increaseHealth(10);
+            playerHealth.increaseHealth(5f);
             scoreText.text = score.ToString("N0");
         }
     }
     
     public void UpDam()
     {
-        if (score > 20)
+        if (score > 25)
         {
-            score -= 20;
-            projectileDamage += 20f;
+            score -= 25;
+            projectileDamage += 0.05f;
             scoreText.text = score.ToString("N0");
         }
     }
     
     public void UpSpeed()
     {
-        if (score > 20)
+        if (score > 25)
         {
-            score -= 20;
-            playerMovement.increaseSpeed(10);
+            score -= 25;
+            playerMovement.increaseSpeed(0.15f);
             scoreText.text = score.ToString("N0");
         }
     }
 
     public void UpEnd()
     {
-        if (score > 30)
+        if (score > 20)
         {
-            score -= 30;
-            playerMovement.increaseEndurance(1);
+            score -= 20;
+            playerMovement.enduranceRechargeTime -= 0.2f;
             scoreText.text = score.ToString("N0");
         }
     }
@@ -237,6 +238,14 @@ public class GameManager : MonoBehaviour
                 break;
 
             case GameState.Paused:
+                if (phase == 2)
+                {
+                    bossChat.text = "Don't get cocky, worm";
+                }
+                else
+                {
+                    bossChat.text = "Enough of your insolence. Prepare to die!";
+                }
                 Time.timeScale = 0f;
                 prev = phase - 1;
                 round = "Round " + prev;
