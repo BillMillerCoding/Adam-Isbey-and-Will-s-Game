@@ -195,6 +195,11 @@ public class PlayerMovement : MonoBehaviour, IResettable
         staminaBar.SetMaxHealth( maxEndurance );
     }
 
+    public void increaseSpeed(float amount)
+    {
+        moveSpeed += amount;
+    }
+
     public void SaveSnapshot()
     {
         savedEndurance = savedEndurance == 0 ? maxEndurance : currentEndurance;

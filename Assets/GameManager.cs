@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     private float startTime;
     private int savedScore;
     public GameObject restartButton;
+    public float projectileDamage;
 
 
 
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour
         playerHealth = player.GetComponent<PlayerHealth>();
         playerMovement = player.GetComponent<PlayerMovement>();
         bossHealth = boss.GetComponent<BossHealth>();
+        projectileDamage = 1f;
         Play();
 
         Instance = this;
@@ -181,6 +183,26 @@ public class GameManager : MonoBehaviour
         {
             score -= 20;
             playerHealth.increaseHealth(10);
+            scoreText.text = score.ToString("N0");
+        }
+    }
+    
+    public void UpDam()
+    {
+        if (score > 20)
+        {
+            score -= 20;
+            projectileDamage += 20f;
+            scoreText.text = score.ToString("N0");
+        }
+    }
+    
+    public void UpSpeed()
+    {
+        if (score > 20)
+        {
+            score -= 20;
+            playerMovement.increaseSpeed(10);
             scoreText.text = score.ToString("N0");
         }
     }
