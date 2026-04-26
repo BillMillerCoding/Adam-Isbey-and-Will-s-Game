@@ -10,6 +10,7 @@ public class Projectile : MonoBehaviour
     {
         direction = launchDirection.normalized;
         GetComponent<Rigidbody2D>().linearVelocity = direction * speed;
+        damage = GameManager.Instance.projectileDamage;
     }
 
     void OnTriggerEnter2D(Collider2D other)
