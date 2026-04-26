@@ -27,6 +27,7 @@ public class BossHealth : MonoBehaviour, IIDamageable
     [SerializeField] private int currentPhase = 1;
     public float MaxHealth => maxHealth;
     public Animator animator;
+    private AudioSource audioSource;
     
    private float savedHealth;
     private int savedPhase;
@@ -53,6 +54,7 @@ public class BossHealth : MonoBehaviour, IIDamageable
     {
         currentHealth = maxHealth;
         currentPhase = 1;
+        audioSource = GetComponent<AudioSource>();
         // these two lines are for testing
     }
     /// <summary>
@@ -64,6 +66,9 @@ public class BossHealth : MonoBehaviour, IIDamageable
 
         currentHealth = Mathf.Max(0f, currentHealth - amount);
         Debug.Log($"[BossHealth] Took {amount} damage. HP: {currentHealth}/{maxHealth}");
+        
+        if (audioSource != null)
+            audioSource.Play();
 
         EvaluatePhase();
         healthBar.SetHealth( currentHealth );

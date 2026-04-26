@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossAttackData
   attackName: NuclearCannon
   animationTrigger: triggerNuclearCannon
-  preferredRing: 2
+  preferredRing: 1
   cooldown: 3
-  weight: 0.2
+  weight: 0.5
   fallbackDuration: 1

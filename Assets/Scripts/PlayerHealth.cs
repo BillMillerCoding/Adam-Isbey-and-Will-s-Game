@@ -11,9 +11,11 @@ public class PlayerHealth : MonoBehaviour, IIDamageable, IResettable
     public Canvas canvas;            // assign your Screen Space canvas
     private float savedHealth;
     private float savedMaxHealth;
+    private AudioSource audioSource;
     void Start()
     {
         currentHealth = maxHealth;
+        audioSource = GetComponent<AudioSource>();
         ResetManager.Register(this);
     }
 
@@ -24,6 +26,8 @@ public class PlayerHealth : MonoBehaviour, IIDamageable, IResettable
             //SpawnPopup("Damage", Color.red);
 
             currentHealth -= damage;
+            if (audioSource != null)
+                audioSource.Play();
         }
         healthBar.SetHealth( currentHealth );
         if(currentHealth <= 0)

@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour, IResettable
 
     private Rigidbody2D rb;
     private Animator animator;
+    private AudioSource audioSource;
     private Vector2 moveInput;
     private Vector2 lastMoveDirection;
     private Vector2 dodgeDirection;
@@ -28,9 +29,13 @@ public class PlayerMovement : MonoBehaviour, IResettable
 
     public SwordHitBox swordHitbox;// this is to grab a reference to the player SwordHitbox child object to
                                    // manage its collider via an animation event.
+    [SerializeField] private AudioClip attackSound;
+    [SerializeField] [Range(0f, 1f)] private float attackSoundVolume = 1f;
+    
     private int savedEndurance;
     private int savedMaxEndurance;
     private float savedRechage;
+    private bool wasAttackPressed;
                                     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,6 +43,7 @@ public class PlayerMovement : MonoBehaviour, IResettable
         playerCollider = GetComponent<CapsuleCollider2D>();
         rb = GetComponent<Rigidbody2D>();//rigid body controls velocity in 2d space.
         animator = GetComponent<Animator>();//manages which animations play
+        audioSource = GetComponent<AudioSource>();
         lastMoveDirection = Vector2.down; //sets default direction of player character to south (0,-1)
         currentEndurance = maxEndurance;
         animator.SetFloat("Speed", 0);
@@ -100,6 +106,16 @@ public class PlayerMovement : MonoBehaviour, IResettable
 
 
 
+    private void PlayAttackSound()
+    {
+        if (audioSource == null || attackSound == null)
+        {
+            return;
+        }
+
+        audioSource.PlayOneShot(attackSound, attackSoundVolume);
+    }
+
     //called on a timer and applies moveInput updates to the rigidbody of the player character.
     void FixedUpdate()
     {
@@ -128,7 +144,14 @@ public class PlayerMovement : MonoBehaviour, IResettable
             rb.linearVelocity = moveInput * moveSpeed;//these two lines handle player running.
             animator.SetFloat("Speed", moveInput.magnitude); //.magnitude applies pythagorean theorem to the coordinates of moveInput.
 
-            if (Mouse.current.leftButton.wasReleasedThisFrame)//handles attack animations
+            bool isAttackPressed = Mouse.current.leftButton.IsPressed();
+
+            if (isAttackPressed && !wasAttackPressed)
+            {
+                PlayAttackSound();
+            }
+
+            if (isAttackPressed)//handles attack animations
             {
                 animator.SetFloat("MoveX", aimDirection.x);//attack animation is based on direction of crosshair
                 animator.SetFloat("MoveY", aimDirection.y);
@@ -140,6 +163,8 @@ public class PlayerMovement : MonoBehaviour, IResettable
                 animator.SetFloat("MoveX", lastMoveDirection.x);//return to WASD directionality
                 animator.SetFloat("MoveY", lastMoveDirection.y);
             }
+
+            wasAttackPressed = isAttackPressed;
         }
 
         if (currentEndurance < maxEndurance)

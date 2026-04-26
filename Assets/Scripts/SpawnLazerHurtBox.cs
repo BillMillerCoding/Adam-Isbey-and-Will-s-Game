@@ -24,4 +24,12 @@ public class SpawnLazerHurtBox : MonoBehaviour
             childCollider.enabled = false;
         }
     }
+    public void PlaySound()
+    {
+            AudioSource audioSource = GetComponent<AudioSource>();
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
+    }
 }

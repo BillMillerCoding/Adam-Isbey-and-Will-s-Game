@@ -16,5 +16,5 @@ MonoBehaviour:
   animationTrigger: TriggerSpinningLazer
   preferredRing: 1
   cooldown: 3
-  weight: 0.6
+  weight: 0.7
   fallbackDuration: 1
