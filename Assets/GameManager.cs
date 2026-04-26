@@ -210,7 +210,7 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 1f;
                 menu.SetActive(false);
                 UI.SetActive(true);
-                Cursor.visible = false;
+                //Cursor.visible = false;
                 startTime = Time.time;
                 break;
 
