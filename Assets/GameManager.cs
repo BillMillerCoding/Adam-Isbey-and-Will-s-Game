@@ -20,6 +20,11 @@ public class GameManager : MonoBehaviour
     public float SpeedUpgradeAmount = 0.15f;
     public float EnduranceUpgradeAmount = 0.2f;
     public float StartingDamage = 1f;
+    public float TimeForBonusPoints = 85f;
+    public float BonusPointMultiplier = 1.5f;
+    public float RoundOnePoints = 100f;
+    public float RoundTwoPoints = 150f;
+    public float RoundThreePoints = 200f;
     
     [Header("GameObjects")]
     public GameState State { get; private set; }
@@ -164,30 +169,30 @@ public class GameManager : MonoBehaviour
     {
         if (round == 1)
         {
-            if (100 - hits < 1)
+            if (RoundOnePoints - hits < 1)
                 return;
-            if (elapsedTime < 85)
-                score += (int)((100 - hits) * 1.5);
+            if (elapsedTime < TimeForBonusPoints)
+                score += (int)((RoundOnePoints - hits) * BonusPointMultiplier);
             else
-                score += (int)(100 - hits);
+                score += (int)(RoundOnePoints - hits);
         }
         else if (round == 2)
         {
-            if (150 - hits < 1)
+            if (RoundTwoPoints - hits < 1)
                 return;
-            if (elapsedTime < 30)
-                score += (int)((150 - hits) * 1.5);
+            if (elapsedTime < TimeForBonusPoints)
+                score += (int)((RoundTwoPoints - hits) * BonusPointMultiplier);
             else
-                score += (int)(150 - hits);
+                score += (int)(RoundTwoPoints - hits);
         }
         else
         {
-            if (200 - hits < 1)
+            if (RoundThreePoints - hits < 1)
                 return;
-            if (elapsedTime < 30)
-                score += (int)((200 - hits) * 1.5);
+            if (elapsedTime < TimeForBonusPoints)
+                score += (int)((RoundThreePoints - hits) * BonusPointMultiplier);
             else
-                score += (int)(200 - hits);
+                score += (int)(RoundThreePoints - hits);
         }
     }
 
@@ -203,7 +208,7 @@ public class GameManager : MonoBehaviour
     
     public void UpDam()
     {
-        if (score > costOfDamageUpgrade)
+        if (score >= costOfDamageUpgrade)
         {
             score -= costOfDamageUpgrade;
             projectileDamage += DamageUpgradeAmount;
@@ -213,7 +218,7 @@ public class GameManager : MonoBehaviour
     
     public void UpSpeed()
     {
-        if (score > costOfSpeedUpgrade)
+        if (score >= costOfSpeedUpgrade)
         {
             score -= costOfSpeedUpgrade;
             playerMovement.increaseSpeed(SpeedUpgradeAmount);
@@ -223,7 +228,7 @@ public class GameManager : MonoBehaviour
 
     public void UpEnd()
     {
-        if (score > costOfEnduranceUpgrade)
+        if (score >= costOfEnduranceUpgrade)
         {
             score -= costOfEnduranceUpgrade;
             playerMovement.enduranceRechargeTime -= EnduranceUpgradeAmount;
