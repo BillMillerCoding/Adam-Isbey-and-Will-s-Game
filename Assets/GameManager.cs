@@ -9,6 +9,19 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public enum GameState { Playing, Paused, GameOver, Intro, EndOfGame }
+    
+    [Header("Balance Values")]
+    public int costOfHPUpgrade = 20;
+    public int costOfDamageUpgrade = 25;
+    public int costOfSpeedUpgrade = 25;
+    public int costOfEnduranceUpgrade = 20;
+    public float HPUpgradeAmount = 5f;
+    public float DamageUpgradeAmount = 0.05f;
+    public float SpeedUpgradeAmount = 0.15f;
+    public float EnduranceUpgradeAmount = 0.2f;
+    public float StartingDamage = 1f;
+    
+    [Header("GameObjects")]
     public GameState State { get; private set; }
     public GameObject VictoryText;
     public GameObject GameOver;
@@ -68,7 +81,7 @@ public class GameManager : MonoBehaviour
         playerHealth = player.GetComponent<PlayerHealth>();
         playerMovement = player.GetComponent<PlayerMovement>();
         bossHealth = boss.GetComponent<BossHealth>();
-        projectileDamage = 1f;
+        projectileDamage = StartingDamage;
         Play();
 
         Instance = this;
@@ -180,9 +193,9 @@ public class GameManager : MonoBehaviour
 
     public void UpHits()
     {
-        if (score > 20)
+        if (score > costOfHPUpgrade)
         {
-            score -= 20;
+            score -= costOfHPUpgrade;
             playerHealth.increaseHealth(5f);
             scoreText.text = score.ToString("N0");
         }
@@ -190,30 +203,30 @@ public class GameManager : MonoBehaviour
     
     public void UpDam()
     {
-        if (score > 25)
+        if (score > costOfDamageUpgrade)
         {
-            score -= 25;
-            projectileDamage += 0.05f;
+            score -= costOfDamageUpgrade;
+            projectileDamage += DamageUpgradeAmount;
             scoreText.text = score.ToString("N0");
         }
     }
     
     public void UpSpeed()
     {
-        if (score > 25)
+        if (score > costOfSpeedUpgrade)
         {
-            score -= 25;
-            playerMovement.increaseSpeed(0.15f);
+            score -= costOfSpeedUpgrade;
+            playerMovement.increaseSpeed(SpeedUpgradeAmount);
             scoreText.text = score.ToString("N0");
         }
     }
 
     public void UpEnd()
     {
-        if (score > 20)
+        if (score > costOfEnduranceUpgrade)
         {
-            score -= 20;
-            playerMovement.enduranceRechargeTime -= 0.2f;
+            score -= costOfEnduranceUpgrade;
+            playerMovement.enduranceRechargeTime -= EnduranceUpgradeAmount;
             scoreText.text = score.ToString("N0");
         }
     }
