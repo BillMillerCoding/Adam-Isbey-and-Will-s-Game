@@ -46,4 +46,4 @@ MonoBehaviour:
         m_AdaptivePerformanceEnabled: 0
         m_MacOSXcodeBuildConfig: 1
         m_Architecture: 2
-        m_CreateXcodeProject: 1
+        m_CreateXcodeProject: 0
