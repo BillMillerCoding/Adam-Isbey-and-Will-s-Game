@@ -29,10 +29,28 @@ public class BossAttackData : ScriptableObject
     [Tooltip("Relative weight when multiple attacks are valid candidates. Higher = more likely.")]
     public float weight = 1f;
 
+    [Header("Phase Gating")]
+    [Tooltip("Earliest boss phase where this attack can be used. 1 = always available.")]
+    [Range(1, 3)]
+    public int minimumPhase = 1;
+
+    [Header("Phase Transition Reserve")]
+    [Tooltip("If enabled, this attack is held in reserve until the configured phase transition fires it.")]
+    public bool reserveUntilTriggered = false;
+    [Tooltip("When the boss enters this phase, this reserved attack is queued and used on the next attack step.")]
+    [Range(1, 3)]
+    public int triggerOnPhase = 2;
+
     [Tooltip("Duration in seconds for the attack coroutine to wait. " +
              "This is a fallback — ideally an Animation Event calls BossAttackHandler.OnAttackAnimationEnd().")]
     public float fallbackDuration = 1f;
 
     [System.NonSerialized] public float lastUsedTime = -999f;
+    [System.NonSerialized] public bool reserveTriggerUsed = false;
     public bool IsOffCooldown => Time.time - lastUsedTime >= cooldown;
+
+    public bool CanBeUsedInPhase(int phase)
+    {
+        return phase >= minimumPhase;
+    }
 }

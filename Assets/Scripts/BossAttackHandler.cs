@@ -17,13 +17,39 @@ public class BossAttackHandler : MonoBehaviour
     private Animator animator;
 
     private bool attackAnimationFinished;
+    private int currentPhase = 1;
+    private readonly Queue<BossAttackData> queuedPhaseAttacks = new Queue<BossAttackData>();
 
     [Header("Debug (read-only)")]
     [SerializeField] private string lastAttackUsed = "";
 
+    public bool HasQueuedPhaseAttack => queuedPhaseAttacks.Count > 0;
+
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
+    }
+
+    public void SetCurrentPhase(int phase)
+    {
+        currentPhase = Mathf.Clamp(phase, 1, 3);
+    }
+
+    public void HandlePhaseChanged(int newPhase)
+    {
+        SetCurrentPhase(newPhase);
+
+        foreach (var atk in attacks)
+        {
+            if (atk == null) continue;
+            if (!atk.reserveUntilTriggered) continue;
+            if (atk.reserveTriggerUsed) continue;
+            if (atk.triggerOnPhase != newPhase) continue;
+            if (!atk.CanBeUsedInPhase(newPhase)) continue;
+
+            queuedPhaseAttacks.Enqueue(atk);
+            atk.reserveTriggerUsed = true;
+        }
     }
 
     /// <summary>
@@ -32,7 +58,9 @@ public class BossAttackHandler : MonoBehaviour
     /// </summary>
     public IEnumerator ExecuteAttack(int currentRing, System.Action<bool> result)
     {
-        BossAttackData chosen = SelectAttack(currentRing);
+        BossAttackData chosen = queuedPhaseAttacks.Count > 0
+            ? queuedPhaseAttacks.Dequeue()
+            : SelectAttack(currentRing, currentPhase);
         if (chosen == null)
         {
             Debug.LogWarning("[BossAttackHandler] No valid attack available.");
@@ -74,13 +102,16 @@ public class BossAttackHandler : MonoBehaviour
         attackAnimationFinished = true;
     }
 
-    private BossAttackData SelectAttack(int currentRing)
+    private BossAttackData SelectAttack(int currentRing, int phase)
     {
         List<BossAttackData> candidates = new List<BossAttackData>();
         float totalWeight = 0f;
 
         foreach (var atk in attacks)
         {
+            if (atk == null) continue;
+            if (!atk.CanBeUsedInPhase(phase)) continue;
+            if (atk.reserveUntilTriggered && !atk.reserveTriggerUsed) continue;
             if (!atk.IsOffCooldown) continue;
 
             float w = atk.weight;
