@@ -17,4 +17,7 @@ MonoBehaviour:
   preferredRing: 1
   cooldown: 3
   weight: 0.5
+  minimumPhase: 3
+  reserveUntilTriggered: 1
+  triggerOnPhase: 3
   fallbackDuration: 1

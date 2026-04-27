@@ -78,8 +78,12 @@ public class BossController : MonoBehaviour
         movement.Initialise(player);
         summonHandler.Initialise(player);
 
+        // Keep attack filtering in sync with boss phase.
+        attackHandler.SetCurrentPhase(health.CurrentPhase);
+
         // Subscribe to death event to stop the loop
         health.OnDeath.AddListener(OnBossDied);
+        health.OnPhaseChanged.AddListener(OnBossPhaseChanged);
 
         // Start the decision loop
         SetState(BossState.Idle);
@@ -89,7 +93,10 @@ public class BossController : MonoBehaviour
     private void OnDestroy()
     {
         if (health != null)
+        {
             health.OnDeath.RemoveListener(OnBossDied);
+            health.OnPhaseChanged.RemoveListener(OnBossPhaseChanged);
+        }
     }
 
     // ─────────────────────────────────────────────────────────────────────────
@@ -134,7 +141,7 @@ public class BossController : MonoBehaviour
             }
 
             // 4. Roll probability: attack or approach?
-            bool shouldAttack = RollAttackChance(ring);
+            bool shouldAttack = attackHandler.HasQueuedPhaseAttack || RollAttackChance(ring);
 
             if (!shouldAttack)
             {
@@ -150,8 +157,12 @@ public class BossController : MonoBehaviour
             // 6. Resolve exclusive choice for Phase 1 style phases
             int attacksToPerform = plan.attacks;
             int summonsToPerform = plan.summons;
+            bool hasQueuedPhaseAttack = attackHandler.HasQueuedPhaseAttack;
 
-            if (plan.exclusiveChoice)
+            if (hasQueuedPhaseAttack)
+                attacksToPerform = Mathf.Max(1, attacksToPerform);
+
+            if (plan.exclusiveChoice && !hasQueuedPhaseAttack)
             {
                 // Randomly pick attacks OR summons, not both
                 if (Random.value < 0.5f)
@@ -266,5 +277,10 @@ public class BossController : MonoBehaviour
         movement.StopMovement();
         StopAllCoroutines();
         Debug.Log("[BossController] Boss defeated — decision loop stopped.");
+    }
+
+    private void OnBossPhaseChanged(int newPhase)
+    {
+        attackHandler.HandlePhaseChanged(newPhase);
     }
 }

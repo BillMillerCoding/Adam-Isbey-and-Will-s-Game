@@ -2116,7 +2116,7 @@ PrefabInstance:
       objectReference: {fileID: 352698511}
     - target: {fileID: 5286206607145738523, guid: e78d7e1a50f057f4380cbf9bacc3dc4d, type: 3}
       propertyPath: maxHealth
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 5286206607145738523, guid: e78d7e1a50f057f4380cbf9bacc3dc4d, type: 3}
       propertyPath: oneUpPrefab
@@ -5828,12 +5828,20 @@ PrefabInstance:
       objectReference: {fileID: 177595396}
     - target: {fileID: 7953364047863974508, guid: b061991b277c62b43b93696961e45ae1, type: 3}
       propertyPath: maxHealth
-      value: 2000
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 7953364047863974508, guid: b061991b277c62b43b93696961e45ae1, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 989158471}
+    - target: {fileID: 7953364047863974508, guid: b061991b277c62b43b93696961e45ae1, type: 3}
+      propertyPath: phase2Threshold
+      value: 0.751
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953364047863974508, guid: b061991b277c62b43b93696961e45ae1, type: 3}
+      propertyPath: phase3Threshold
+      value: 0.502
+      objectReference: {fileID: 0}
     - target: {fileID: 7953364047863974508, guid: b061991b277c62b43b93696961e45ae1, type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
