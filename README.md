@@ -1,5 +1,5 @@
 # The Final Boss
-A Game by Adam, Isbey, and William
+A Game by Adam Hill, Isbey, and William Miller
 
 # How To Play
   - Download finalboss.zip
